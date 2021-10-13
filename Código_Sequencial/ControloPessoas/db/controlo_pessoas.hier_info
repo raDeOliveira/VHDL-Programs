@@ -1,0 +1,15 @@
+|controlo_pessoas
+clk => present_state~1.DATAIN
+in1[0] => Equal0.IN0
+in1[0] => Equal1.IN1
+in1[1] => Equal0.IN1
+in1[1] => Equal1.IN0
+saida_moore[0] <= saida_moore.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[1] <= WideOr0.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[2] <= saida_moore.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[3] <= saida_moore.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[4] <= saida_moore[4].DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[5] <= saida_moore[5].DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[6] <= saida_moore.DB_MAX_OUTPUT_PORT_TYPE
+
+

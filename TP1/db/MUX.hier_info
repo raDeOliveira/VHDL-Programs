@@ -1,0 +1,18 @@
+|MUX
+a_IN[0] => Mux0.IN7
+a_IN[1] => Mux0.IN6
+a_IN[2] => Mux0.IN5
+a_IN[3] => Mux0.IN4
+a_IN[4] => Mux0.IN3
+a_IN[5] => Mux0.IN2
+sel[0] => Mux0.IN10
+sel[0] => Mux1.IN10
+sel[1] => Mux0.IN9
+sel[1] => Mux1.IN9
+sel[2] => Mux0.IN8
+sel[2] => Mux1.IN8
+enable => p_mux.IN0
+enable1 => p_mux.IN1
+b_OUT <= b_OUT.DB_MAX_OUTPUT_PORT_TYPE
+
+

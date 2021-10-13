@@ -1,0 +1,22 @@
+-- display 7 segmentos
+library ieee;
+use ieee.std_logic_1164.all;
+--entidade
+entity display7 is
+
+port( bits_entrada: in std_logic_vector(3 downto 0);
+		a, b, c, d, e, f, g: out std_logic);
+end display7;
+--arquitectura
+architecture arch of display7 is
+
+begin
+	b, c <= bits_entrada("0001");
+	a, b, d, e, g 			<= bits_entrada("0010");
+	a, b, c, d, g 			<= bits_entrada("0011");
+	b, c, f, g				<= bits_entrada("0100");
+	a, c, d, f, g 			<= bits_entrada("0101");
+	a, c, d, e, f, g		<= bits_entrada("0110");
+	a, b, c					<= bits_entrada("0111");
+	a, b, c, d, e, f, g	<= bits_entrada("1111");
+	a, b, c, d, f, g		<= bits_entrada("1001");

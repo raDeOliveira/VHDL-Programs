@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/verificaMoore3/simulation/qsim
+vverificamoore3
+Z1 !s110 1591469572
+!i10b 1
+!s100 91OHn<9HJ0Vi6D>lzI]hl0
+Im@3Fmz?]aAZZ?45cl]MnN1
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591469570
+8verificamoore3.vo
+Fverificamoore3.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591469571.966000
+!s107 verificamoore3.vo|
+!s90 -work|work|verificamoore3.vo|
+!i113 1
+Z4 o-work work
+vverificamoore3_vlg_check_tst
+R1
+!i10b 1
+!s100 FViZ?PO]1OliO[SC@Ql<`2
+IbHLT:mAXd;`U:9kE5eJ<i3
+R2
+R0
+Z5 w1591469566
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R3
+r1
+!s85 0
+31
+Z8 !s108 1591469572.134000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vverificamoore3_vlg_sample_tst
+R1
+!i10b 1
+!s100 M4OA@TNi7Q>Cm79AH_>iB0
+I6`]^N<hXRSf9FKH;AjcgN1
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vverificamoore3_vlg_vec_tst
+R1
+!i10b 1
+!s100 Z5f:D7fcX10oM@8g2P9Z_3
+IemiHKQzPTW5D1a@Yf;;X?3
+R2
+R0
+R5
+R6
+R7
+L0 182
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

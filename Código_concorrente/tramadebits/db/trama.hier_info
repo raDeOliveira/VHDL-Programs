@@ -1,0 +1,25 @@
+|trama
+trama[0] => saida.IN1
+trama[0] => saida.IN1
+trama[0] => saida.IN1
+trama[0] => saida.IN1
+trama[0] => saida.IN1
+trama[0] => saida.IN1
+trama[0] => saida.IN1
+trama[1] => saida.IN0
+trama[1] => saida.IN0
+trama[1] => saida.IN0
+trama[1] => saida.IN0
+trama[2] => saida.IN1
+trama[2] => saida.IN1
+trama[2] => saida.IN1
+trama[2] => saida.IN1
+saida[0] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[1] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[2] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[3] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[4] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[5] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+saida[6] <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

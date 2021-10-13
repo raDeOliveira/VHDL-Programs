@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/encriptador/encript.vhd
+source_file = 1, encriptador2.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/encriptador/Waveform.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/encriptador/db/encript.cbx.xml
+design_name = encript
+instance = comp, \saida~output\, saida~output, encript, 1
+instance = comp, \palavra[0]~input\, palavra[0]~input, encript, 1
+instance = comp, \palavra[1]~input\, palavra[1]~input, encript, 1
+instance = comp, \palavra[2]~input\, palavra[2]~input, encript, 1
+instance = comp, \saida~0\, saida~0, encript, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, encript, 1

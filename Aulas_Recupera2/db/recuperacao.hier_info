@@ -1,0 +1,16 @@
+|recuperacao
+clk => present_state~1.DATAIN
+sequencia1[0] => Equal1.IN1
+sequencia1[1] => Equal1.IN0
+sequencia[0] => Equal0.IN2
+sequencia[0] => Equal2.IN1
+sequencia[0] => Equal3.IN1
+sequencia[1] => Equal0.IN1
+sequencia[1] => Equal2.IN2
+sequencia[1] => Equal3.IN0
+sequencia[2] => Equal0.IN0
+sequencia[2] => Equal2.IN0
+sequencia[2] => Equal3.IN2
+DETETA <= Selector4.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,61 @@
+-- Joga Dado //
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity jogaDado is
+port(
+    clk, reset : in std_logic;
+    joga : in std_logic;
+    s_OUT0: out std_logic_vector(5 downto 0);
+--	 s_OUT1: out std_logic_vector(5 downto 0);
+--	 s_OUT2: out std_logic_vector(5 downto 0);
+--	 s_OUT3: out std_logic_vector(5 downto 0);
+--	 s_OUT4: out std_logic_vector(5 downto 0);
+--	 s_OUT5: out std_logic_vector(5 downto 0);
+--	 s_OUT6: out std_logic_vector(5 downto 0));
+end jogaDado;
+
+architecture arch of jogaDado is
+    type stateMoore_type is (zero, um, dois, tres, quatro, cinco, seis); 
+    signal stateMoore_reg, stateMoore_next : stateMoore_type;
+    
+begin   
+    process(clk, reset)
+    begin
+        if (reset = '1') then 
+            stateMoore_reg <= zero;
+        elsif (clk'event and clk = '1') then 
+            stateMoore_reg <= stateMoore_next;
+        else
+            null;
+        end if; 
+    end process;
+     process(stateMoore_reg, joga)
+	  
+	begin    
+        stateMoore_next <= stateMoore_reg; 
+        
+        case stateMoore_reg is 
+            when zero =>   
+                if joga = '1' then  
+                    stateMoore_next <= um;
+						  s_OUT <= "0001000";
+						elsif 
+							  stateMoore_next <= dois;
+							  s_OUT <= "1000001";
+						elsif 
+							  stateMoore_next <= tres;
+							  s_OUT <= "1001001";
+						elsif 
+							  stateMoore_next <= quatro;
+							  s_OUT <= "1010101";
+						elsif 
+							  stateMoore_next <= cinco;
+							  s_OUT <= "1011101";
+						elsif 
+							  stateMoore_next <= seis;
+							  s_OUT <= "1110111";
+                end if;
+        end case; 
+    end process;  
+end arch;

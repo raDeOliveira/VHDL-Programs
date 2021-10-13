@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'GERA'
+Slack : -2.412
+TNS   : -2.412
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -1.919
+TNS   : -1.919
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : 0.507
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Hold 'GERA'
+Slack : 1.085
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -1.134
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'GERA'
+Slack : 0.480
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'GERA'
+Slack : -2.361
+TNS   : -2.361
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -1.960
+TNS   : -1.960
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : 0.543
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Hold 'GERA'
+Slack : 1.030
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -1.132
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'GERA'
+Slack : 0.438
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -1.148
+TNS   : -1.148
+
+Type  : Fast 1100mV 85C Model Setup 'GERA'
+Slack : -0.355
+TNS   : -0.355
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.102
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'GERA'
+Slack : 0.224
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.278
+TNS   : -0.278
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'GERA'
+Slack : 0.069
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -1.071
+TNS   : -1.071
+
+Type  : Fast 1100mV 0C Model Setup 'GERA'
+Slack : -0.287
+TNS   : -0.287
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.039
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'GERA'
+Slack : 0.179
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.282
+TNS   : -0.282
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'GERA'
+Slack : 0.064
+TNS   : 0.000
+
+------------------------------------------------------------

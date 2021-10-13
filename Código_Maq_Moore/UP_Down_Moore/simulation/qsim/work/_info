@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/UP_Down_Moore/simulation/qsim
+vup_down
+Z1 !s110 1591815021
+!i10b 1
+!s100 zNSb7dU_65CG9HF6JKYe_1
+INRMPTKKj<McEnSgF6:PQa0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591815019
+8up_down.vo
+Fup_down.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591815021.755000
+!s107 up_down.vo|
+!s90 -work|work|up_down.vo|
+!i113 1
+Z4 o-work work
+vup_down_vlg_check_tst
+R1
+!i10b 1
+!s100 PPTk2CUAF[FP2J=kOgVeR3
+IgMHR`Y`:<nEhY]?z<EE?G2
+R2
+R0
+Z5 w1591815015
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 62
+R3
+r1
+!s85 0
+31
+Z8 !s108 1591815021.938000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vup_down_vlg_sample_tst
+R1
+!i10b 1
+!s100 oI7d>5lkH134`G0ZikCOV0
+IT3YZJdb^B_zMm7TfznFCK1
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vup_down_vlg_vec_tst
+R1
+!i10b 1
+!s100 `l`8ReHRb<1<Q97PZPYH80
+I_m0Uz1jc0UfP_0aAVY:kP1
+R2
+R0
+R5
+R6
+R7
+L0 184
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

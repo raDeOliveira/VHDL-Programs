@@ -1,0 +1,8 @@
+|recuperacao
+clk => present_state.CLK
+sequencia[0] => Equal0.IN0
+sequencia[1] => Equal0.IN2
+sequencia[2] => Equal0.IN1
+saida_mealy <= saida_mealy.DB_MAX_OUTPUT_PORT_TYPE
+
+

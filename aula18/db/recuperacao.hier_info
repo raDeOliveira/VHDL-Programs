@@ -1,0 +1,14 @@
+|recuperacao
+clk => present_state~1.DATAIN
+in1[0] => Equal0.IN1
+in1[0] => Equal1.IN0
+in1[1] => Equal0.IN0
+in1[1] => Equal1.IN1
+verde <= verde$latch.DB_MAX_OUTPUT_PORT_TYPE
+vermelho <= vermelho$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[0] <= saida_moore[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[1] <= saida_moore[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[2] <= saida_moore[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_moore[3] <= <GND>
+
+

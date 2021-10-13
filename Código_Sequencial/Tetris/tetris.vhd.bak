@@ -1,0 +1,19 @@
+-- 
+library ieee;
+use ieee.std_logic_1164.all
+
+entity tetris is
+port (branco: IN bit_vector(3 downto 0);
+		preto: IN bit_vector(3 downto 0)
+		flag : boolean := false);
+end tetris;
+
+architecture arch of tetris is
+begin
+	joga: process (branco, preto, flag)
+			begin
+				if (branco <= '1') and (preto <= '1') then
+				flag <= true;
+				end if;
+		end process;
+	end arch;

@@ -1,0 +1,6 @@
+
+State Machine - |aula09|stateMoore_reg
+Name stateMoore_reg.dois stateMoore_reg.um stateMoore_reg.zero 
+stateMoore_reg.zero 0 0 0 
+stateMoore_reg.um 0 1 1 
+stateMoore_reg.dois 1 0 1 

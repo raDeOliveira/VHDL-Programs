@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD/adn/simulation/qsim
+vADN
+Z1 !s110 1587505474
+!i10b 1
+!s100 [1BLJZf_VW7e?I;A_UTn`2
+I32K77LoP1Nj>d114G2[270
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1587505472
+8ADN.vo
+FADN.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1587505474.261000
+!s107 ADN.vo|
+!s90 -work|work|ADN.vo|
+!i113 1
+Z4 o-work work
+n@a@d@n
+vADN_vlg_check_tst
+R1
+!i10b 1
+!s100 1G5`zm?HY@?SfhgW<l<I12
+I_MNionE`jfEhO==iV[32>1
+R2
+R0
+Z5 w1587505467
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 76
+R3
+r1
+!s85 0
+31
+Z8 !s108 1587505474.449000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+n@a@d@n_vlg_check_tst
+vADN_vlg_sample_tst
+R1
+!i10b 1
+!s100 z<z6eLWoLi=TPnjH_A=gj0
+I`;Y94Dej^gBOGk9aC8b622
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@a@d@n_vlg_sample_tst
+vADN_vlg_vec_tst
+R1
+!i10b 1
+!s100 f8CG4_bCC<N8Qa_UQ`NA]0
+IX4AQ?lkcQnU_bP?@FOFiU1
+R2
+R0
+R5
+R6
+R7
+L0 171
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+n@a@d@n_vlg_vec_tst

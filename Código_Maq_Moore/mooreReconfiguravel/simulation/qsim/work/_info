@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/mooreReconfiguravel/simulation/qsim
+vmooreReconfiguravel
+!s110 1591309525
+!i10b 1
+!s100 <2MDRDIPKiga2[YT1c2g=0
+I@iimHOWWX4flajigLd;R80
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591309523
+8mooreReconfiguravel.vo
+FmooreReconfiguravel.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591309525.892000
+!s107 mooreReconfiguravel.vo|
+!s90 -work|work|mooreReconfiguravel.vo|
+!i113 1
+Z3 o-work work
+nmoore@reconfiguravel
+vmooreReconfiguravel_vlg_check_tst
+Z4 !s110 1591309526
+!i10b 1
+!s100 gfIMi01KC3f;ceHd4PzFf3
+IV=o=3=6gF=1FiR?RHYkPl1
+R1
+R0
+Z5 w1591309519
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R2
+r1
+!s85 0
+31
+Z8 !s108 1591309526.097000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+nmoore@reconfiguravel_vlg_check_tst
+vmooreReconfiguravel_vlg_sample_tst
+R4
+!i10b 1
+!s100 ]@>@7c@V`SjQh`9:F:7a<1
+IAYa;^QbUz5W:jIZ:^^?1h3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+nmoore@reconfiguravel_vlg_sample_tst
+vmooreReconfiguravel_vlg_vec_tst
+R4
+!i10b 1
+!s100 n[?:?8eDFTgmV9EXBh^ge3
+I>0@nVh0B>OS5Wl8fn0W[52
+R1
+R0
+R5
+R6
+R7
+L0 190
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+nmoore@reconfiguravel_vlg_vec_tst

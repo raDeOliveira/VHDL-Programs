@@ -1,0 +1,7 @@
+
+State Machine - |rodasorte|stateMoore_reg
+Name stateMoore_reg.tres stateMoore_reg.dois stateMoore_reg.um stateMoore_reg.zero 
+stateMoore_reg.zero 0 0 0 0 
+stateMoore_reg.um 0 0 1 1 
+stateMoore_reg.dois 0 1 0 1 
+stateMoore_reg.tres 1 0 0 1 

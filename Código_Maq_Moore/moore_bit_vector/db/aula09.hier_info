@@ -1,0 +1,11 @@
+|aula09
+clk => stateMoore_reg~1.DATAIN
+start => stateMoore_reg~3.DATAIN
+s1[0] <= s1[0].DB_MAX_OUTPUT_PORT_TYPE
+s1[1] <= s1[1].DB_MAX_OUTPUT_PORT_TYPE
+s2[0] <= s2[0].DB_MAX_OUTPUT_PORT_TYPE
+s2[1] <= s2[1].DB_MAX_OUTPUT_PORT_TYPE
+s3[0] <= s3[0].DB_MAX_OUTPUT_PORT_TYPE
+s3[1] <= s3[1].DB_MAX_OUTPUT_PORT_TYPE
+
+

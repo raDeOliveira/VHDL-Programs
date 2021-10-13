@@ -1,0 +1,13 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Aulas_Recuperação/aula02junho/aula02junho.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Aulas_Recuperação/aula02junho/Waveform.vwf
+source_file = 1, maq_est1.vhd
+source_file = 1, Waveform1.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Aulas_Recuperação/aula02junho/db/aula02junho.cbx.xml
+design_name = aula02junho
+instance = comp, \saida_porta~output , saida_porta~output, aula02junho, 1
+instance = comp, \sensor~input , sensor~input, aula02junho, 1

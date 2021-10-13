@@ -1,0 +1,20 @@
+library ieee;
+use ieee.std_logic_1164.all;
+entity impares is
+port(	a : in std_logic;
+		b : in std_logic;
+		c : in std_logic;
+		d : in std_logic;
+		saida : out std_logic);
+		
+end impares;
+architecture saida_impares of impares is
+	
+	begin
+			saida <= (a) or (b) or (c) or (d);
+			saida <= (a) and (d);
+			saida <= (b) and (c) and (d);
+			saida <= (a) and (c) and (d);
+			saida <= (a) and (b) and (d);
+			saida <= (a) and (b) and (c)
+	end saida_impares;

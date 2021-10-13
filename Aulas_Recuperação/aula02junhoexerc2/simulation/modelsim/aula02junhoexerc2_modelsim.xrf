@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/aula02junhoexerc2/aula02junhoexerc2.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/aula02junhoexerc2/Waveform.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/aula02junhoexerc2/db/aula02junhoexerc2.cbx.xml
+design_name = aula02junhoexerc2
+instance = comp, \saida~output\, saida~output, aula02junhoexerc2, 1
+instance = comp, \clk~input\, clk~input, aula02junhoexerc2, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, aula02junhoexerc2, 1

@@ -1,0 +1,12 @@
+|encript
+palavra[0] => p1.IN1
+palavra[0] => p2.IN1
+palavra[1] => p1.IN0
+palavra[1] => p2.IN0
+palavra[1] => p3.IN0
+palavra[2] => p1.IN1
+palavra[2] => p2.IN1
+palavra[2] => p3.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

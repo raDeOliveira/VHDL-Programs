@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/sistemabancario/simulation/qsim
+vsistemabancario
+Z1 !s110 1591310672
+!i10b 1
+!s100 QU0?zV204;XkQc90GzMZ=0
+ImZEK7h2n3n`c=7Yfl7m2h0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591310670
+8sistemabancario.vo
+Fsistemabancario.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591310672.209000
+!s107 sistemabancario.vo|
+!s90 -work|work|sistemabancario.vo|
+!i113 1
+Z4 o-work work
+vsistemabancario_vlg_check_tst
+R1
+!i10b 1
+!s100 5?1]1bR?Dhc7zC4IkBP9f0
+I5J:W=T[59g0S:S@6U6GoT0
+R2
+R0
+Z5 w1591310666
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R3
+r1
+!s85 0
+31
+Z8 !s108 1591310672.374000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vsistemabancario_vlg_sample_tst
+R1
+!i10b 1
+!s100 e9`a@zi4Q?9[>QdQR>LFg3
+I>`D96`G1ijJ[bJTRMiZ@>0
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vsistemabancario_vlg_vec_tst
+R1
+!i10b 1
+!s100 lE0kIUlbHC0]?QEJonbL@2
+ITiEJOG6VolU=VBEMnNdaR3
+R2
+R0
+R5
+R6
+R7
+L0 155
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

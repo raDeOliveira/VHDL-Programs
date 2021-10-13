@@ -1,0 +1,7 @@
+|verificamoore3
+clk => stateMealy_reg.CLK
+start => stateMealy_reg.ACLR
+saida_moore << <GND>
+saida_mealy << <GND>
+
+

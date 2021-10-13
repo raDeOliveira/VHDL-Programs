@@ -1,0 +1,12 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Beep/beep.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Beep/Waveform.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Beep/db/beep.cbx.xml
+design_name = beep
+instance = comp, \beep~output , beep~output, beep, 1
+instance = comp, \estado0~input , estado0~input, beep, 1
+instance = comp, \estado1~input , estado1~input, beep, 1

@@ -1,0 +1,6 @@
+
+State Machine - |recuperacao|present_state
+Name present_state.tres present_state.dois present_state.um 
+present_state.um 0 0 0 
+present_state.dois 0 1 1 
+present_state.tres 1 0 1 

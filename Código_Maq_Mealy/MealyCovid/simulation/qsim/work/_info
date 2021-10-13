@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/MealyCovid/simulation/qsim
+vMealyCovid
+!s110 1591306189
+!i10b 1
+!s100 B7d]ikl1hhIoV64;Zg4A<3
+IPfLkjf0E0JJ?SWUBZGCOl2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591306187
+8MealyCovid.vo
+FMealyCovid.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591306189.852000
+!s107 MealyCovid.vo|
+!s90 -work|work|MealyCovid.vo|
+!i113 1
+Z3 o-work work
+n@mealy@covid
+vMealyCovid_vlg_check_tst
+Z4 !s110 1591306190
+!i10b 1
+!s100 XjC0Xe=Z>[a;L4DY2N9gX0
+IcSlV>_mFGV0[6T_8IoFmj3
+R1
+R0
+Z5 w1591306183
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R2
+r1
+!s85 0
+31
+Z8 !s108 1591306190.034000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+n@mealy@covid_vlg_check_tst
+vMealyCovid_vlg_sample_tst
+R4
+!i10b 1
+!s100 SBH<I1=3OanUm]2Ya=8:53
+IBgambF<GcOPgO]0LO2]_f3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+n@mealy@covid_vlg_sample_tst
+vMealyCovid_vlg_vec_tst
+R4
+!i10b 1
+!s100 egFEC`i@_@17[H?nFH5Wg0
+IlClakO[Si8YK1oj25@CFU0
+R1
+R0
+R5
+R6
+R7
+L0 155
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+n@mealy@covid_vlg_vec_tst

@@ -1,0 +1,25 @@
+|rodasorte
+clk_zero => stateMoore_reg~1.DATAIN
+clk_um => ~NO_FANOUT~
+clk_dois => ~NO_FANOUT~
+start => stateMoore_next.OUTPUTSELECT
+start => stateMoore_next.OUTPUTSELECT
+start => stateMoore_next.OUTPUTSELECT
+start => stateMoore_next.OUTPUTSELECT
+start => stateMoore_next.OUTPUTSELECT
+start => stateMoore_next.OUTPUTSELECT
+start => stateMoore_next.OUTPUTSELECT
+start => Selector7.IN1
+start => stateMoore_reg~3.DATAIN
+s_OUT_zero[0] <= s_OUT_zero[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_zero[1] <= s_OUT_zero[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_zero[2] <= s_OUT_zero[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_um[0] <= s_OUT_um[0].DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_um[1] <= s_OUT_um[1].DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_um[2] <= s_OUT_um[2].DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_dois[0] <= s_OUT_dois[0].DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_dois[1] <= s_OUT_dois[1].DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_dois[2] <= s_OUT_dois[2].DB_MAX_OUTPUT_PORT_TYPE
+s_OUT_resultado <= s_OUT_zero[2].DB_MAX_OUTPUT_PORT_TYPE
+
+

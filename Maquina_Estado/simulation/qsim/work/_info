@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.0/maquinaestado/simulation/qsim
+vmaquinaestado
+!s110 1591288793
+!i10b 1
+!s100 h]eFWLCE>3lkCD]eo^h6U1
+I??@b3z3b0Y1o[]_9R3=7[2
+Z0 V`JN@9S9cnhjKRR_L]QIcM3
+Z1 dC:/altera/15.0/PSD_Exercicios/maquinaestado/simulation/qsim
+w1591288788
+8maquinaestado.vo
+Fmaquinaestado.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591288793.842000
+!s107 maquinaestado.vo|
+!s90 -work|work|maquinaestado.vo|
+!i113 1
+Z3 o-work work
+vmaquinaestado_vlg_check_tst
+Z4 !s110 1591288794
+!i10b 1
+!s100 `2?MaJN8<?>ofM@M1C2Mk3
+IZZFHKbzzOUoCYYc;ZeJb`3
+R0
+R1
+Z5 w1591288783
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 62
+R2
+r1
+!s85 0
+31
+Z8 !s108 1591288794.007000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vmaquinaestado_vlg_sample_tst
+R4
+!i10b 1
+!s100 Gj0K>6DFkCT_C=Gzz?WT10
+Ibi[bQ;LanTi8F@j6BVZ>E0
+R0
+R1
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vmaquinaestado_vlg_vec_tst
+R4
+!i10b 1
+!s100 >LAFWIbTV?mDAD;V]CGDZ2
+IIHKYYXE6g_gCD_V>z?P2Y2
+R0
+R1
+R5
+R6
+R7
+L0 184
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

@@ -1,0 +1,23 @@
+|jogo_galo
+v[0] => ~NO_FANOUT~
+v[1] => ~NO_FANOUT~
+v[2] => ~NO_FANOUT~
+v[3] => ~NO_FANOUT~
+v[4] => ~NO_FANOUT~
+v[5] => ~NO_FANOUT~
+v[6] => ~NO_FANOUT~
+v[7] => ~NO_FANOUT~
+v[8] => ~NO_FANOUT~
+v[9] => ~NO_FANOUT~
+v2[0] <= <GND>
+v2[1] <= <GND>
+v2[2] <= <GND>
+v2[3] <= <GND>
+v2[4] <= <GND>
+v2[5] <= <GND>
+v2[6] <= <GND>
+v2[7] <= <GND>
+v2[8] <= <GND>
+v2[9] <= <GND>
+
+

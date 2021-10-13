@@ -1,0 +1,139 @@
+-- Pokemon//
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity Pokemon is
+port(
+    clk_zero, clk_um, start : in std_logic;
+     sel: in std_logic_vector ( 1 downto 0);
+    equipe0: out std_logic_vector(6 downto 0);
+     equipe1: out std_logic_vector(6 downto 0);
+     s_OUT_zero: out std_logic_vector(6 downto 0);
+     s_OUT_um: out std_logic_vector(6 downto 0);
+     flag: out std_logic := '0');
+end Pokemon;
+
+ 
+
+architecture arch of Pokemon is
+    type stateMoore_type is (zero, um, dois, tres, quatro, cinco, seis, sete); 
+    signal stateMoore_reg, stateMoore_next : stateMoore_type;
+
+ 
+
+-----------------------------------------------------------------------
+-- testa resultado inicial antes de poder arrancar a máquina de estados
+begin
+process
+    begin
+        if s_OUT_zero and s_OUT_um = "0000001" then
+            flag <= '0';
+        elsif s_OUT_zero and s_OUT_um = "0000010" then
+            flag <= '0';
+        else
+            flag <= '1';
+		  end if;
+
+ 
+
+-----------
+--equipe um 
+begin   
+    process(clk_zero, start)
+    begin
+        if (start = '1') then 
+            stateMoore_reg <= zero;
+        elsif (clk0'event and clk0 = '1') then 
+            stateMoore_reg <= stateMoore_next;
+        else
+            null;
+        end if; 
+    end process;
+
+ 
+
+ process(stateMoore_reg, start)
+     begin
+     stateMoore_next <= stateMoore_reg;
+         case stateMoore_reg is
+                when dois =>
+                if start = '1' then
+                    stateMoore_next <= tres;
+                    equipe0 <= "0000011";
+                    s_OUT_zero <= "0000011";
+                end if;
+                
+                when tres =>
+                if start = '1' then
+                    stateMoore_next <= quatro;
+                    equipe0 <= "0000100";
+                    s_OUT_zero <= "0000100";
+                end if;
+                    
+                when quatro =>
+                if start = '1' then
+                    stateMoore_next <= cinco;
+                    equipe0 <= "0000101";
+                    s_OUT_zero <= "0000101";
+					 end if;
+                    
+                when cinco =>
+                if start = '1' then
+                    stateMoore_next <= seis;
+                    equipe0 <= "0000110";
+                    s_OUT_zero <= "0000110";
+                end if;
+                
+                when seis =>
+                if start = '1' then
+                    stateMoore_next <= sete;
+                    equipe0 <= "0000111";
+                    s_OUT_zero <= "0000111";
+                end if;
+            end case;
+        end process;
+
+ 
+
+-------------
+--equipe dois
+    begin
+         stateMoore_next <= stateMoore_reg;
+             case stateMoore_reg is
+                    when dois =>
+                    if start = '1' then
+                        stateMoore_next <= tres;
+                        equipe1 <= "0000011";
+                        s_OUT_um <= "0000011";
+                    end if;
+                    
+                    when tres =>
+                    if start = '1' then
+                        stateMoore_next <= quatro;
+                        equipe1 <= "0000100";
+                        s_OUT_um <= "0000100";
+                    end if;
+                        
+                    when quatro =>
+                    if start = '1' then
+                        stateMoore_next <= cinco;
+                        equipe1 <= "0000101";
+                        s_OUT_um <= "0000101";
+							end if;
+                        
+                    when cinco =>
+                    if start = '1' then
+                        stateMoore_next <= seis;
+                        equipe1 <= "0000110";
+                        s_OUT_um <= "0000110";
+                    end if;
+                    
+                    when seis =>
+                    if start = '1' then
+                        stateMoore_next <= sete;
+                        equipe1 <= "0000111";
+                        s_OUT_um <= "0000111";
+                    end if;
+                end case;
+            end process;
+    end arch;

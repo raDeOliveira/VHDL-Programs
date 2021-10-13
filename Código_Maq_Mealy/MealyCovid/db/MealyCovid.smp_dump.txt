@@ -1,0 +1,6 @@
+
+State Machine - |MealyCovid|present_state
+Name present_state.base_dados present_state.febre present_state.temp 
+present_state.temp 0 0 0 
+present_state.febre 0 1 1 
+present_state.base_dados 1 0 1 

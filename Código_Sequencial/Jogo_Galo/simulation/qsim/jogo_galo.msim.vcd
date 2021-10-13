@@ -1,0 +1,100 @@
+$comment
+	File created using the following command:
+		vcd file jogo_galo.msim.vcd -direction
+$end
+$date
+	Sat Jun 06 18:04:08 2020
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module jogo_galo_vlg_vec_tst $end
+$var reg 10 ! v [9:0] $end
+$var wire 1 " v2 [9] $end
+$var wire 1 # v2 [8] $end
+$var wire 1 $ v2 [7] $end
+$var wire 1 % v2 [6] $end
+$var wire 1 & v2 [5] $end
+$var wire 1 ' v2 [4] $end
+$var wire 1 ( v2 [3] $end
+$var wire 1 ) v2 [2] $end
+$var wire 1 * v2 [1] $end
+$var wire 1 + v2 [0] $end
+$var wire 1 , sampler $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var tri1 1 0 devclrn $end
+$var tri1 1 1 devpor $end
+$var tri1 1 2 devoe $end
+$var wire 1 3 v[0]~input_o $end
+$var wire 1 4 v[1]~input_o $end
+$var wire 1 5 v[2]~input_o $end
+$var wire 1 6 v[3]~input_o $end
+$var wire 1 7 v[4]~input_o $end
+$var wire 1 8 v[5]~input_o $end
+$var wire 1 9 v[6]~input_o $end
+$var wire 1 : v[7]~input_o $end
+$var wire 1 ; v[8]~input_o $end
+$var wire 1 < v[9]~input_o $end
+$var wire 1 = v2[0]~output_o $end
+$var wire 1 > v2[1]~output_o $end
+$var wire 1 ? v2[2]~output_o $end
+$var wire 1 @ v2[3]~output_o $end
+$var wire 1 A v2[4]~output_o $end
+$var wire 1 B v2[5]~output_o $end
+$var wire 1 C v2[6]~output_o $end
+$var wire 1 D v2[7]~output_o $end
+$var wire 1 E v2[8]~output_o $end
+$var wire 1 F v2[9]~output_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b1000100100 !
+0+
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+0"
+x,
+0-
+1.
+x/
+10
+11
+12
+03
+04
+15
+06
+07
+18
+09
+0:
+0;
+1<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+$end
+#1000000

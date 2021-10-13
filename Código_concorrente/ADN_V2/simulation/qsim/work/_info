@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/ADN/simulation/qsim
+vadn
+Z1 !s110 1591341900
+!i10b 1
+!s100 <CjXoQVgA;b79;]Z9dzc62
+IC`Yjc7U1F;Wlm[H:dQ=681
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591341898
+8adn.vo
+Fadn.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591341899.993000
+!s107 adn.vo|
+!s90 -work|work|adn.vo|
+!i113 1
+Z4 o-work work
+vadn_vlg_check_tst
+R1
+!i10b 1
+!s100 866zM?0]W>lO`D;G25BzI0
+IM=m7aP_o_FlO`K3_eKU8M2
+R2
+R0
+Z5 w1591341894
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R3
+r1
+!s85 0
+31
+Z8 !s108 1591341900.147000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vadn_vlg_sample_tst
+R1
+!i10b 1
+!s100 fNbg<3C?H<d`<a7MhOeOI3
+IFN>D4P=30K[Pd8W1EWblc2
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vadn_vlg_vec_tst
+R1
+!i10b 1
+!s100 ODX`_9KfUd>[kWeT1AO?;3
+IWeXZoW8J<LYXDRMalY5;U3
+R2
+R0
+R5
+R6
+R7
+L0 155
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

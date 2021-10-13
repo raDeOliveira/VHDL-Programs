@@ -1,0 +1,50 @@
+$comment
+	File created using the following command:
+		vcd file beep.msim.vcd -direction
+$end
+$date
+	Fri Jun 05 08:38:40 2020
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module beep_vlg_vec_tst $end
+$var reg 1 ! estado0 $end
+$var reg 1 " estado1 $end
+$var wire 1 # beep $end
+$var wire 1 $ sampler $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + estado0~input_o $end
+$var wire 1 , estado1~input_o $end
+$var wire 1 - beep~output_o $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+1#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+1+
+1,
+1-
+$end
+#1000000

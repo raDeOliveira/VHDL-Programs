@@ -1,0 +1,52 @@
+$comment
+	File created using the following command:
+		vcd file aula02junhoexerc3.msim.vcd -direction
+$end
+$date
+	Wed Jun 03 00:03:16 2020
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module aula02junhoexerc3_vlg_vec_tst $end
+$var reg 1 ! porta_A $end
+$var reg 1 " porta_B $end
+$var wire 1 # saida_luzes $end
+$var wire 1 $ sampler $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + ~QUARTUS_CREATED_GND~I_combout $end
+$var wire 1 , porta_B~input_o $end
+$var wire 1 - porta_A~input_o $end
+$var wire 1 . saida_luzes~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+0"
+1#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+1-
+1.
+$end
+#1000000

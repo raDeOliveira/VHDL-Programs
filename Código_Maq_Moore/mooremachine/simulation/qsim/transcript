@@ -1,0 +1,39 @@
+# do mooremachine.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:19:01 on Jun 04,2020
+# vlog -work work mooremachine.vo 
+# -- Compiling module mooremachine
+# 
+# Top level modules:
+# 	mooremachine
+# End time: 23:19:01 on Jun 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:19:01 on Jun 04,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module mooremachine_vlg_sample_tst
+# -- Compiling module mooremachine_vlg_check_tst
+# -- Compiling module mooremachine_vlg_vec_tst
+# 
+# Top level modules:
+# 	mooremachine_vlg_vec_tst
+# End time: 23:19:01 on Jun 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "mooremachine.do" 
+# Start time: 23:19:01 on Jun 04,2020
+# Loading work.mooremachine_vlg_vec_tst
+# Loading work.mooremachine
+# Loading altera_ver.dffeas
+# Loading work.mooremachine_vlg_sample_tst
+# Loading work.mooremachine_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# ERROR! Vector Mismatch for output port saida[0] :: @time = 25000.000 ps
+#      Expected value = 001
+#      Real value = 000
+#           1 mismatched vectors : Simulation failed !
+# ** Note: $finish    : Waveform.vwf.vt(487)
+#    Time: 1 us  Iteration: 0  Instance: /mooremachine_vlg_vec_tst/tb_out
+# End time: 23:19:02 on Jun 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

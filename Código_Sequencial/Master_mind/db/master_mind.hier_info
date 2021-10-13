@@ -1,0 +1,19 @@
+|master_mind
+ja_pino0 => ~NO_FANOUT~
+ja_pino1 => process_0.IN0
+ja_pino2 => process_0.IN0
+ja_pino3 => process_0.IN0
+ja_pino4 => process_0.IN0
+jb_pino0 => ~NO_FANOUT~
+jb_pino1 => process_0.IN1
+jb_pino2 => process_0.IN1
+jb_pino3 => process_0.IN1
+jb_pino4 => process_0.IN1
+led0 <= <VCC>
+led1 <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+led2 <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+led3 <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+led4 <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+flag <= process_0.DB_MAX_OUTPUT_PORT_TYPE
+
+

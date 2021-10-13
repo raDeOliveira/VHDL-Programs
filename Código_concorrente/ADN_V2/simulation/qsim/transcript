@@ -1,0 +1,32 @@
+# do adn.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:24:59 on Jun 05,2020
+# vlog -work work adn.vo 
+# -- Compiling module adn
+# 
+# Top level modules:
+# 	adn
+# End time: 08:25:00 on Jun 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:25:00 on Jun 05,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module adn_vlg_sample_tst
+# -- Compiling module adn_vlg_check_tst
+# -- Compiling module adn_vlg_vec_tst
+# 
+# Top level modules:
+# 	adn_vlg_vec_tst
+# End time: 08:25:00 on Jun 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "adn.do" 
+# Start time: 08:25:00 on Jun 05,2020
+# Loading work.adn_vlg_vec_tst
+# Loading work.adn
+# Loading work.adn_vlg_sample_tst
+# Loading work.adn_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(151)
+#    Time: 1 us  Iteration: 0  Instance: /adn_vlg_vec_tst/tb_out
+# End time: 08:25:01 on Jun 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

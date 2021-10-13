@@ -1,0 +1,34 @@
+# do ADN.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:34 on Apr 21,2020
+# vlog -work work ADN.vo 
+# -- Compiling module ADN
+# 
+# Top level modules:
+# 	ADN
+# End time: 22:44:34 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 22:44:34 on Apr 21,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module ADN_vlg_sample_tst
+# -- Compiling module ADN_vlg_check_tst
+# -- Compiling module ADN_vlg_vec_tst
+# 
+# Top level modules:
+# 	ADN_vlg_vec_tst
+# End time: 22:44:34 on Apr 21,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "ADN.do" 
+# Start time: 22:44:34 on Apr 21,2020
+# Loading work.ADN_vlg_vec_tst
+# Loading work.ADN
+# Loading work.ADN_vlg_sample_tst
+# Loading work.ADN_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(167)
+#    Time: 1 us  Iteration: 0  Instance: /ADN_vlg_vec_tst/tb_out
+# End time: 22:44:35 on Apr 21,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

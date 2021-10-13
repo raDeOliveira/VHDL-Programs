@@ -1,0 +1,13 @@
+|sistemabancario
+clk => present_state~1.DATAIN
+sequencia[0] => Equal0.IN3
+sequencia[0] => Equal1.IN2
+sequencia[1] => Equal0.IN1
+sequencia[1] => Equal1.IN1
+sequencia[2] => Equal0.IN0
+sequencia[2] => Equal1.IN0
+sequencia[3] => Equal0.IN2
+sequencia[3] => Equal1.IN3
+alarme <= alarme.DB_MAX_OUTPUT_PORT_TYPE
+
+

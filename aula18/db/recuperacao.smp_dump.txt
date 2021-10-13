@@ -1,0 +1,8 @@
+
+State Machine - |recuperacao|present_state
+Name present_state.carro5 present_state.carro4 present_state.carro3 present_state.carro2 present_state.carro1 
+present_state.carro1 0 0 0 0 0 
+present_state.carro2 0 0 0 1 1 
+present_state.carro3 0 0 1 0 1 
+present_state.carro4 0 1 0 0 1 
+present_state.carro5 1 0 0 0 1 

@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.0/PSD/tramadebits/simulation/qsim
+vtrama
+Z0 !s110 1591340630
+!i10b 1
+!s100 bz=eoiV:AWSng6K1VK@cc0
+I4[3fMbYYaeVJn<jgLDMHM2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/altera/15.0/PSD_Exercicios/tramadebits/simulation/qsim
+w1591340628
+8trama.vo
+Ftrama.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591340630.493000
+!s107 trama.vo|
+!s90 -work|work|trama.vo|
+!i113 1
+Z4 o-work work
+vtrama_vlg_check_tst
+R0
+!i10b 1
+!s100 @FjK>5`RejLI]ozil_KD72
+I>hf7h^KmLzl[Sz8M<Le763
+R1
+R2
+Z5 w1591340624
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 58
+R3
+r1
+!s85 0
+31
+Z8 !s108 1591340630.724000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vtrama_vlg_sample_tst
+R0
+!i10b 1
+!s100 M]PcLM>JW[WKWo?UXSiN^0
+IiHVY[li_QGlfHf:lWd`n>2
+R1
+R2
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vtrama_vlg_vec_tst
+R0
+!i10b 1
+!s100 z8R5`2IVKjBlJ3BaALfMB0
+I:MeEP4jl9@Mn1_W=?I:bf1
+R1
+R2
+R5
+R6
+R7
+L0 260
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

@@ -1,0 +1,14 @@
+|adn
+a[0] => ~NO_FANOUT~
+a[1] => ~NO_FANOUT~
+a[2] => p3.IN0
+a[3] => p2.IN0
+a[4] => p1.IN0
+a2[0] => ~NO_FANOUT~
+a2[1] => p1.IN1
+a2[2] => p2.IN1
+a2[3] => p3.IN1
+a2[4] => ~NO_FANOUT~
+b_out <= b_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

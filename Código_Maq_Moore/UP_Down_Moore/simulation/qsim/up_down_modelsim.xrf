@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/UP_Down_Moore/up_down.vhd
+source_file = 1, MaqMoorePerp.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/UP_Down_Moore/Waveform.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/UP_Down_Moore/db/up_down.cbx.xml
+design_name = up_down
+instance = comp, \s0~output , s0~output, up_down, 1
+instance = comp, \s1~output , s1~output, up_down, 1
+instance = comp, \clk~input , clk~input, up_down, 1
+instance = comp, \botao~input , botao~input, up_down, 1
+instance = comp, \stateMoore_reg~0 , stateMoore_reg~0, up_down, 1
+instance = comp, \rst~input , rst~input, up_down, 1

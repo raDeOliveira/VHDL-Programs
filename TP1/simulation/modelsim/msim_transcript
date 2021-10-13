@@ -1,0 +1,137 @@
+# Reading C:/altera/15.0/modelsim_ase/tcl/vsim/pref.tcl
+# do MUX_run_msim_gate_vhdl.do
+# if {[file exists gate_work]} {
+# 	vdel -lib gate_work -all
+# }
+# vlib gate_work
+# vmap work gate_work
+# Model Technology ModelSim PE vmap 10.3d Lib Mapping Utility 2014.10 Oct  7 2014
+# vmap -modelsim_quiet work gate_work 
+# Copying C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:/altera/15.0/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {MUX_6_1200mv_85c_slow.vho}
+# Model Technology ModelSim ALTERA vcom 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 09:23:09 on Apr 16,2020
+# vcom -reportprogress 300 -93 -work work MUX_6_1200mv_85c_slow.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity MUX
+# -- Compiling architecture structure of MUX
+# End time: 09:23:10 on Apr 16,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# 
+vsim work.mux
+# vsim -gui "+altera" -l msim_transcript -do "MUX_run_msim_gate_vhdl.do" 
+# Start time: 09:23:26 on Apr 16,2020
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading work.mux(structure)
+# Loading ieee.std_logic_arith(body)
+# Loading cycloneive.cycloneive_io_obuf(arch)
+# Loading cycloneive.cycloneive_io_ibuf(arch)
+# Loading cycloneive.cycloneive_lcell_comb(vital_lcell_comb)
+run
+run
+# Break key hit
+add wave -position insertpoint  \
+sim:/mux/a_IN
+run
+add wave -position insertpoint  \
+sim:/mux/sel
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -continue
+run
+run
+run -continue
+run -all
+run -all
+# Break key hit
+run -all
+# Break key hit
+run -continue
+# Break key hit
+run
+# Break key hit
+wave create -driver freeze -pattern clock -initialvalue U -period 100us -dutycycle 50 -starttime 0us -endtime 1000us sim:/mux/enable
+# Editable Wave items are not compatible with the wave window's standard undo-redo.  Standard undo-redo has been disabled.
+run
+run
+run
+wave create -driver freeze -pattern constant -value U -starttime 0us -endtime 1000us sim:/mux/enable1
+add wave  \
+sim:/mux/a_IN
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run -continue
+# Break key hit
+# Break key hit
+run -continue
+run -continue
+# Break key hit
+add wave  \
+sim:/mux/sel
+run
+run -continue
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+# Break key hit
+run -continue
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run -continue
+run
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf C:/altera/15.0/PSD/TP1/simulation/modelsim/wave.do
+wave editwrite -file C:/altera/15.0/PSD/TP1/simulation/modelsim/wave.do -append
+# End time: 09:31:10 on Apr 16,2020, Elapsed time: 0:07:44
+# Errors: 0, Warnings: 0

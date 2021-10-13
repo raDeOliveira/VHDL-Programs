@@ -1,0 +1,10 @@
+|tatica_futebol
+ataque0 => saida.IN0
+ataque1 => saida.IN1
+meio_campo0 => saida.IN0
+meio_campo1 => saida.IN1
+defesa0 => saida.IN0
+defesa1 => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,6 @@
+
+State Machine - |mooreReconfiguravel|PresentState
+Name PresentState.c PresentState.b PresentState.a 
+PresentState.a 0 0 0 
+PresentState.b 0 1 1 
+PresentState.c 1 0 1 

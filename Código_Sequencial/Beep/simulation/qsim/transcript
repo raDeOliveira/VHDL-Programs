@@ -1,0 +1,32 @@
+# do beep.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:38:39 on Jun 05,2020
+# vlog -work work beep.vo 
+# -- Compiling module beep
+# 
+# Top level modules:
+# 	beep
+# End time: 08:38:39 on Jun 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:38:39 on Jun 05,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module beep_vlg_sample_tst
+# -- Compiling module beep_vlg_check_tst
+# -- Compiling module beep_vlg_vec_tst
+# 
+# Top level modules:
+# 	beep_vlg_vec_tst
+# End time: 08:38:39 on Jun 05,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "beep.do" 
+# Start time: 08:38:39 on Jun 05,2020
+# Loading work.beep_vlg_vec_tst
+# Loading work.beep
+# Loading work.beep_vlg_sample_tst
+# Loading work.beep_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(151)
+#    Time: 1 us  Iteration: 0  Instance: /beep_vlg_vec_tst/tb_out
+# End time: 08:38:40 on Jun 05,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

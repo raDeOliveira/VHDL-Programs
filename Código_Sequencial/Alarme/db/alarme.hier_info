@@ -1,0 +1,9 @@
+|alarme
+s0 => process_0.IN0
+s1 => process_0.IN1
+s2 => process_0.IN1
+s3 => process_0.IN1
+clk => saida~reg0.CLK
+saida <= saida~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

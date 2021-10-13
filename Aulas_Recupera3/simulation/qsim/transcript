@@ -1,0 +1,34 @@
+# do recuperacao.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:41:40 on Jun 16,2020
+# vlog -work work recuperacao.vo 
+# -- Compiling module recuperacao
+# 
+# Top level modules:
+# 	recuperacao
+# End time: 20:41:40 on Jun 16,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 20:41:40 on Jun 16,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module recuperacao_vlg_sample_tst
+# -- Compiling module recuperacao_vlg_check_tst
+# -- Compiling module recuperacao_vlg_vec_tst
+# 
+# Top level modules:
+# 	recuperacao_vlg_vec_tst
+# End time: 20:41:41 on Jun 16,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# vsim -c -do "recuperacao.do" 
+# Start time: 20:41:41 on Jun 16,2020
+# Loading work.recuperacao_vlg_vec_tst
+# Loading work.recuperacao
+# Loading altera_ver.dffeas
+# Loading work.recuperacao_vlg_sample_tst
+# Loading work.recuperacao_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(151)
+#    Time: 1 us  Iteration: 0  Instance: /recuperacao_vlg_vec_tst/tb_out
+# End time: 20:41:41 on Jun 16,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

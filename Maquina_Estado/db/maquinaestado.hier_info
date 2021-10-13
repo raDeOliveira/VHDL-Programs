@@ -1,0 +1,20 @@
+|maquinaestado
+clk => stateMealy_reg.CLK
+clk => stateMoore_reg~1.DATAIN
+reset => stateMealy_reg.ACLR
+reset => stateMoore_reg~3.DATAIN
+level => stateMealy_next.OUTPUTSELECT
+level => Mealy_tick.DATAB
+level => stateMoore_next.OUTPUTSELECT
+level => stateMoore_next.OUTPUTSELECT
+level => stateMoore_next.OUTPUTSELECT
+level => Selector2.IN2
+level => stateMealy_next.OUTPUTSELECT
+level => stateMoore_next.OUTPUTSELECT
+level => stateMoore_next.OUTPUTSELECT
+level => stateMoore_next.OUTPUTSELECT
+level => Selector0.IN1
+Mealy_tick << Mealy_tick.DB_MAX_OUTPUT_PORT_TYPE
+Moore_tick << Moore_tick.DB_MAX_OUTPUT_PORT_TYPE
+
+

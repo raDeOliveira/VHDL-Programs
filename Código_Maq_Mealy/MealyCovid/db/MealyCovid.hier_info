@@ -1,0 +1,11 @@
+|MealyCovid
+clk => present_state~1.DATAIN
+in1 => next_state.OUTPUTSELECT
+in1 => next_state.OUTPUTSELECT
+in1 => next_state.OUTPUTSELECT
+in1 => Selector1.IN2
+in1 => saida_mealy.DATAB
+in1 => Selector0.IN2
+saida_mealy <= saida_mealy.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,36 @@
+# do gerador.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:19:19 on Jun 04,2020
+# vlog -work work gerador.vo 
+# -- Compiling module gerador
+# 
+# Top level modules:
+# 	gerador
+# End time: 08:19:20 on Jun 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 08:19:20 on Jun 04,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module gerador_vlg_sample_tst
+# -- Compiling module gerador_vlg_check_tst
+# -- Compiling module gerador_vlg_vec_tst
+# 
+# Top level modules:
+# 	gerador_vlg_vec_tst
+# End time: 08:19:20 on Jun 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "gerador.do" 
+# Start time: 08:19:20 on Jun 04,2020
+# Loading work.gerador_vlg_vec_tst
+# Loading work.gerador
+# Loading altera_ver.dffeas
+# Loading work.gerador_vlg_sample_tst
+# Loading work.gerador_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(153)
+#    Time: 1 us  Iteration: 0  Instance: /gerador_vlg_vec_tst/tb_out
+# End time: 08:19:20 on Jun 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

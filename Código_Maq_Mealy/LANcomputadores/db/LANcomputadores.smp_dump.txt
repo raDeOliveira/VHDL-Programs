@@ -1,0 +1,21 @@
+
+State Machine - |lancomputadores|presentStatePC3
+Name presentStatePC3.d presentStatePC3.c presentStatePC3.b presentStatePC3.a 
+presentStatePC3.a 0 0 0 0 
+presentStatePC3.b 0 0 1 1 
+presentStatePC3.c 0 1 0 1 
+presentStatePC3.d 1 0 0 1 
+
+State Machine - |lancomputadores|presentStatePC2
+Name presentStatePC2.d presentStatePC2.c presentStatePC2.b presentStatePC2.a 
+presentStatePC2.a 0 0 0 0 
+presentStatePC2.b 0 0 1 1 
+presentStatePC2.c 0 1 0 1 
+presentStatePC2.d 1 0 0 1 
+
+State Machine - |lancomputadores|presentState
+Name presentState.d presentState.c presentState.b presentState.a 
+presentState.a 0 0 0 0 
+presentState.b 0 0 1 1 
+presentState.c 0 1 0 1 
+presentState.d 1 0 0 1 

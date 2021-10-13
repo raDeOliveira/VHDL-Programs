@@ -1,0 +1,8 @@
+
+State Machine - |mooremachine|estado
+Name estado.A4 estado.A3 estado.A2 estado.A1 estado.A0 
+estado.A0 0 0 0 0 0 
+estado.A1 0 0 0 1 1 
+estado.A2 0 0 1 0 1 
+estado.A3 0 1 0 0 1 
+estado.A4 1 0 0 0 1 

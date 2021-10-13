@@ -1,0 +1,6 @@
+
+State Machine - |moore_perp|stateMoore_reg
+Name stateMoore_reg.two stateMoore_reg.one stateMoore_reg.zero 
+stateMoore_reg.zero 0 0 0 
+stateMoore_reg.one 0 1 1 
+stateMoore_reg.two 1 0 1 

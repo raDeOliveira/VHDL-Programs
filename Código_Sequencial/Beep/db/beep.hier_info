@@ -1,0 +1,6 @@
+|beep
+estado0 => ~NO_FANOUT~
+estado1 => ~NO_FANOUT~
+beep <= <VCC>
+
+

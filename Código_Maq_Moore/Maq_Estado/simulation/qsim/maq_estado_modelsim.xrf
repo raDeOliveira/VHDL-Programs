@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Maq_Estado/maq_estado.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Maq_Estado/Waveform.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Maq_Estado/db/maq_estado.cbx.xml
+design_name = maq_estado
+instance = comp, \q[0]~output , q[0]~output, maq_estado, 1
+instance = comp, \q[1]~output , q[1]~output, maq_estado, 1
+instance = comp, \ck~input , ck~input, maq_estado, 1
+instance = comp, \rst~input , rst~input, maq_estado, 1
+instance = comp, \q[1]~reg0 , q[1]~reg0, maq_estado, 1
+instance = comp, \q[0]~0 , q[0]~0, maq_estado, 1
+instance = comp, \q[0]~reg0 , q[0]~reg0, maq_estado, 1

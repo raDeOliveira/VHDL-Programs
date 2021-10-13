@@ -1,0 +1,14 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/verificaMoore2/verificamoore2.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/verificaMoore2/Waveform.vwf
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/verificaMoore2/db/verificaMoore2.cbx.xml
+design_name = verificaMoore2
+instance = comp, \saida_moore~output , saida_moore~output, verificaMoore2, 1
+instance = comp, \saida_mealy~output , saida_mealy~output, verificaMoore2, 1
+instance = comp, \clk~input , clk~input, verificaMoore2, 1
+instance = comp, \start~input , start~input, verificaMoore2, 1
+instance = comp, \stateMoore_reg~0 , stateMoore_reg~0, verificaMoore2, 1

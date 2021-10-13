@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/gerador/simulation/qsim
+vgerador
+!s110 1591255159
+!i10b 1
+!s100 `YEl]5gc]HTog`lUQC<V]2
+INL[WJF4oiIEog1WEcg];A2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591255158
+8gerador.vo
+Fgerador.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591255159.949000
+!s107 gerador.vo|
+!s90 -work|work|gerador.vo|
+!i113 1
+Z3 o-work work
+vgerador_vlg_check_tst
+Z4 !s110 1591255160
+!i10b 1
+!s100 :jdPMXS^cVY`DSVVn2SII3
+IK>l@Mg]VDd^QBOT]Ne?CU3
+R1
+R0
+Z5 w1591255153
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 62
+R2
+r1
+!s85 0
+31
+Z8 !s108 1591255160.112000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vgerador_vlg_sample_tst
+R4
+!i10b 1
+!s100 b5aTVO2g6VfjH4P]4;Gf?3
+IPJJO`n@J`=`onB7dKYehl1
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vgerador_vlg_vec_tst
+R4
+!i10b 1
+!s100 4@J`[_d=1JUc3O9lXYA6f2
+I>AB=g8h:0>=`HgJRFAm2]1
+R1
+R0
+R5
+R6
+R7
+L0 157
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

@@ -1,0 +1,36 @@
+|display7
+en0 => a.IN0
+en0 => d.IN1
+en0 => f.IN1
+en0 => g.IN1
+en1 => a.IN0
+en1 => c.IN0
+en1 => d.IN0
+en1 => f.IN0
+en1 => a.IN0
+en1 => b.IN1
+en1 => d.IN0
+en2 => a.IN1
+en2 => b.IN0
+en2 => c.IN1
+en2 => d.IN0
+en2 => d.IN1
+en2 => b.IN0
+en2 => d.IN1
+en3 => a.IN1
+en3 => b.IN1
+en3 => c.IN1
+en3 => d.IN1
+en3 => a.IN1
+en3 => b.IN1
+en3 => d.IN1
+en3 => f.IN1
+a <= a.DB_MAX_OUTPUT_PORT_TYPE
+b <= b.DB_MAX_OUTPUT_PORT_TYPE
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= d.DB_MAX_OUTPUT_PORT_TYPE
+e <= d.DB_MAX_OUTPUT_PORT_TYPE
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+g <= g.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,246 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "06/04/2020 22:29:47"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module MealyCovid (
+	clk,
+	in1,
+	saida_mealy);
+input 	clk;
+input 	in1;
+output 	saida_mealy;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \saida_mealy~output_o ;
+wire \in1~input_o ;
+wire \clk~input_o ;
+wire \Selector0~0_combout ;
+wire \present_state.temp~q ;
+wire \next_state.febre~0_combout ;
+wire \present_state.febre~q ;
+wire \Selector1~0_combout ;
+wire \present_state.base_dados~q ;
+wire \saida_mealy~0_combout ;
+
+
+cyclonev_io_obuf \saida_mealy~output (
+	.i(\saida_mealy~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\saida_mealy~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \saida_mealy~output .bus_hold = "false";
+defparam \saida_mealy~output .open_drain_output = "false";
+defparam \saida_mealy~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \in1~input (
+	.i(in1),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\in1~input_o ));
+// synopsys translate_off
+defparam \in1~input .bus_hold = "false";
+defparam \in1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \Selector0~0 (
+// Equation(s):
+// \Selector0~0_combout  = (\in1~input_o  & !\present_state.base_dados~q )
+
+	.dataa(!\in1~input_o ),
+	.datab(!\present_state.base_dados~q ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector0~0 .extended_lut = "off";
+defparam \Selector0~0 .lut_mask = 64'h4444444444444444;
+defparam \Selector0~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \present_state.temp (
+	.clk(\clk~input_o ),
+	.d(\Selector0~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\present_state.temp~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \present_state.temp .is_wysiwyg = "true";
+defparam \present_state.temp .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \next_state.febre~0 (
+// Equation(s):
+// \next_state.febre~0_combout  = (\in1~input_o  & !\present_state.temp~q )
+
+	.dataa(!\in1~input_o ),
+	.datab(!\present_state.temp~q ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\next_state.febre~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \next_state.febre~0 .extended_lut = "off";
+defparam \next_state.febre~0 .lut_mask = 64'h4444444444444444;
+defparam \next_state.febre~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \present_state.febre (
+	.clk(\clk~input_o ),
+	.d(\next_state.febre~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\present_state.febre~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \present_state.febre .is_wysiwyg = "true";
+defparam \present_state.febre .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \Selector1~0 (
+// Equation(s):
+// \Selector1~0_combout  = (\in1~input_o  & \present_state.febre~q )
+
+	.dataa(!\in1~input_o ),
+	.datab(!\present_state.febre~q ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector1~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector1~0 .extended_lut = "off";
+defparam \Selector1~0 .lut_mask = 64'h1111111111111111;
+defparam \Selector1~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \present_state.base_dados (
+	.clk(\clk~input_o ),
+	.d(\Selector1~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\present_state.base_dados~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \present_state.base_dados .is_wysiwyg = "true";
+defparam \present_state.base_dados .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \saida_mealy~0 (
+// Equation(s):
+// \saida_mealy~0_combout  = (\in1~input_o  & \present_state.base_dados~q )
+
+	.dataa(!\in1~input_o ),
+	.datab(!\present_state.base_dados~q ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\saida_mealy~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \saida_mealy~0 .extended_lut = "off";
+defparam \saida_mealy~0 .lut_mask = 64'h1111111111111111;
+defparam \saida_mealy~0 .shared_arith = "off";
+// synopsys translate_on
+
+assign saida_mealy = \saida_mealy~output_o ;
+
+endmodule

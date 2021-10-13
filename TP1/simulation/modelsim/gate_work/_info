@@ -1,0 +1,57 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD/TP1/simulation/modelsim
+Emux
+Z1 w1587024558
+Z2 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
+Z3 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 L_6l00[jX@fPi3NK9k]K51
+Z4 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
+Z5 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z6 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z7 DPx10 cycloneive 21 cycloneive_components 0 22 dg2jie6KIo=WomW[h>BZb0
+R0
+Z8 8MUX_6_1200mv_85c_slow.vho
+Z9 FMUX_6_1200mv_85c_slow.vho
+l0
+L35
+VZlTjGagP2cN]_0CITh3?D1
+!s100 e`oFg6VSkzP@49WeJV^C[2
+Z10 OV;C;10.3d;59
+31
+Z11 !s110 1587025389
+!i10b 1
+Z12 !s108 1587025389.324000
+Z13 !s90 -reportprogress|300|-93|-work|work|MUX_6_1200mv_85c_slow.vho|
+Z14 !s107 MUX_6_1200mv_85c_slow.vho|
+!i113 1
+Z15 o-93 -work work
+Z16 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 3 mux 0 22 ZlTjGagP2cN]_0CITh3?D1
+l93
+L60
+V6hN^dTVjiHFc7RDjSL6Q32
+!s100 5bEKj?1GIlPM__R:ZC=lj3
+R10
+31
+R11
+!i10b 1
+R12
+R13
+R14
+!i113 1
+R15
+R16

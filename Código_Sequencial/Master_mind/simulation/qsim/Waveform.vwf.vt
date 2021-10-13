@@ -1,0 +1,434 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/06/2020 19:04:20"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    master_mind
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module master_mind_vlg_sample_tst(
+	ja_pino0,
+	ja_pino1,
+	ja_pino2,
+	ja_pino3,
+	ja_pino4,
+	jb_pino0,
+	jb_pino1,
+	jb_pino2,
+	jb_pino3,
+	jb_pino4,
+	sampler_tx
+);
+input  ja_pino0;
+input  ja_pino1;
+input  ja_pino2;
+input  ja_pino3;
+input  ja_pino4;
+input  jb_pino0;
+input  jb_pino1;
+input  jb_pino2;
+input  jb_pino3;
+input  jb_pino4;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(ja_pino0 or ja_pino1 or ja_pino2 or ja_pino3 or ja_pino4 or jb_pino0 or jb_pino1 or jb_pino2 or jb_pino3 or jb_pino4)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+    if ($realtime == 0 || $realtime != current_time)  
+    begin                                             
+        if (sample === 1'bx)                          
+            sample = 0;                               
+        else                                          
+            sample = ~sample;                         
+    end                                               
+    current_time = $realtime;                         
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module master_mind_vlg_check_tst (
+	flag,
+	led0,
+	led1,
+	led2,
+	led3,
+	led4,
+	sampler_rx
+);
+input  flag;
+input  led0;
+input  led1;
+input  led2;
+input  led3;
+input  led4;
+input sampler_rx;
+
+reg  flag_expected;
+reg  led0_expected;
+reg  led1_expected;
+reg  led2_expected;
+reg  led3_expected;
+reg  led4_expected;
+
+reg  flag_prev;
+reg  led0_prev;
+reg  led1_prev;
+reg  led2_prev;
+reg  led3_prev;
+reg  led4_prev;
+
+reg  flag_expected_prev;
+reg  led0_expected_prev;
+reg  led1_expected_prev;
+reg  led2_expected_prev;
+reg  led3_expected_prev;
+reg  led4_expected_prev;
+
+reg  last_flag_exp;
+reg  last_led0_exp;
+reg  last_led1_exp;
+reg  last_led2_exp;
+reg  last_led3_exp;
+reg  last_led4_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:6] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 6'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	flag_prev = flag;
+	led0_prev = led0;
+	led1_prev = led1;
+	led2_prev = led2;
+	led3_prev = led3;
+	led4_prev = led4;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	flag_expected_prev = flag_expected;
+	led0_expected_prev = led0_expected;
+	led1_expected_prev = led1_expected;
+	led2_expected_prev = led2_expected;
+	led3_expected_prev = led3_expected;
+	led4_expected_prev = led4_expected;
+end
+
+
+
+// expected flag
+initial
+begin
+	flag_expected = 1'bX;
+end 
+
+// expected led0
+initial
+begin
+	led0_expected = 1'bX;
+end 
+
+// expected led1
+initial
+begin
+	led1_expected = 1'bX;
+end 
+
+// expected led2
+initial
+begin
+	led2_expected = 1'bX;
+end 
+
+// expected led3
+initial
+begin
+	led3_expected = 1'bX;
+end 
+
+// expected led4
+initial
+begin
+	led4_expected = 1'bX;
+end 
+// generate trigger
+always @(flag_expected or flag or led0_expected or led0 or led1_expected or led1 or led2_expected or led2 or led3_expected or led3 or led4_expected or led4)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected flag = %b | expected led0 = %b | expected led1 = %b | expected led2 = %b | expected led3 = %b | expected led4 = %b | ",flag_expected_prev,led0_expected_prev,led1_expected_prev,led2_expected_prev,led3_expected_prev,led4_expected_prev);
+	$display("| real flag = %b | real led0 = %b | real led1 = %b | real led2 = %b | real led3 = %b | real led4 = %b | ",flag_prev,led0_prev,led1_prev,led2_prev,led3_prev,led4_prev);
+`endif
+	if (
+		( flag_expected_prev !== 1'bx ) && ( flag_prev !== flag_expected_prev )
+		&& ((flag_expected_prev !== last_flag_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port flag :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", flag_expected_prev);
+		$display ("     Real value = %b", flag_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_flag_exp = flag_expected_prev;
+	end
+	if (
+		( led0_expected_prev !== 1'bx ) && ( led0_prev !== led0_expected_prev )
+		&& ((led0_expected_prev !== last_led0_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port led0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", led0_expected_prev);
+		$display ("     Real value = %b", led0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_led0_exp = led0_expected_prev;
+	end
+	if (
+		( led1_expected_prev !== 1'bx ) && ( led1_prev !== led1_expected_prev )
+		&& ((led1_expected_prev !== last_led1_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port led1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", led1_expected_prev);
+		$display ("     Real value = %b", led1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_led1_exp = led1_expected_prev;
+	end
+	if (
+		( led2_expected_prev !== 1'bx ) && ( led2_prev !== led2_expected_prev )
+		&& ((led2_expected_prev !== last_led2_exp) ||
+			on_first_change[4])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port led2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", led2_expected_prev);
+		$display ("     Real value = %b", led2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[4] = 1'b0;
+		last_led2_exp = led2_expected_prev;
+	end
+	if (
+		( led3_expected_prev !== 1'bx ) && ( led3_prev !== led3_expected_prev )
+		&& ((led3_expected_prev !== last_led3_exp) ||
+			on_first_change[5])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port led3 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", led3_expected_prev);
+		$display ("     Real value = %b", led3_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[5] = 1'b0;
+		last_led3_exp = led3_expected_prev;
+	end
+	if (
+		( led4_expected_prev !== 1'bx ) && ( led4_prev !== led4_expected_prev )
+		&& ((led4_expected_prev !== last_led4_exp) ||
+			on_first_change[6])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port led4 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", led4_expected_prev);
+		$display ("     Real value = %b", led4_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[6] = 1'b0;
+		last_led4_exp = led4_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module master_mind_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg ja_pino0;
+reg ja_pino1;
+reg ja_pino2;
+reg ja_pino3;
+reg ja_pino4;
+reg jb_pino0;
+reg jb_pino1;
+reg jb_pino2;
+reg jb_pino3;
+reg jb_pino4;
+// wires                                               
+wire flag;
+wire led0;
+wire led1;
+wire led2;
+wire led3;
+wire led4;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+master_mind i1 (
+// port map - connection between master ports and signals/registers   
+	.flag(flag),
+	.ja_pino0(ja_pino0),
+	.ja_pino1(ja_pino1),
+	.ja_pino2(ja_pino2),
+	.ja_pino3(ja_pino3),
+	.ja_pino4(ja_pino4),
+	.jb_pino0(jb_pino0),
+	.jb_pino1(jb_pino1),
+	.jb_pino2(jb_pino2),
+	.jb_pino3(jb_pino3),
+	.jb_pino4(jb_pino4),
+	.led0(led0),
+	.led1(led1),
+	.led2(led2),
+	.led3(led3),
+	.led4(led4)
+);
+
+// ja_pino0
+initial
+begin
+	ja_pino0 = 1'b1;
+end 
+
+// ja_pino1
+initial
+begin
+	ja_pino1 = 1'b0;
+end 
+
+// ja_pino2
+initial
+begin
+	ja_pino2 = 1'b0;
+end 
+
+// ja_pino3
+initial
+begin
+	ja_pino3 = 1'b0;
+end 
+
+// ja_pino4
+initial
+begin
+	ja_pino4 = 1'b0;
+end 
+
+// jb_pino0
+initial
+begin
+	jb_pino0 = 1'b1;
+end 
+
+// jb_pino1
+initial
+begin
+	jb_pino1 = 1'b0;
+end 
+
+// jb_pino2
+initial
+begin
+	jb_pino2 = 1'b0;
+end 
+
+// jb_pino3
+initial
+begin
+	jb_pino3 = 1'b0;
+end 
+
+// jb_pino4
+initial
+begin
+	jb_pino4 = 1'b0;
+end 
+
+master_mind_vlg_sample_tst tb_sample (
+	.ja_pino0(ja_pino0),
+	.ja_pino1(ja_pino1),
+	.ja_pino2(ja_pino2),
+	.ja_pino3(ja_pino3),
+	.ja_pino4(ja_pino4),
+	.jb_pino0(jb_pino0),
+	.jb_pino1(jb_pino1),
+	.jb_pino2(jb_pino2),
+	.jb_pino3(jb_pino3),
+	.jb_pino4(jb_pino4),
+	.sampler_tx(sampler)
+);
+
+master_mind_vlg_check_tst tb_out(
+	.flag(flag),
+	.led0(led0),
+	.led1(led1),
+	.led2(led2),
+	.led3(led3),
+	.led4(led4),
+	.sampler_rx(sampler)
+);
+endmodule
+

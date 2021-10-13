@@ -1,0 +1,9 @@
+|Pokemon
+jogador1 => pokemon.IN0
+jogador1 => pokemon.IN0
+jogador2 => pokemon.IN1
+jogador2 => pokemon.IN1
+pk_Win <= pokemon.DB_MAX_OUTPUT_PORT_TYPE
+pk_Tie <= pokemon.DB_MAX_OUTPUT_PORT_TYPE
+
+

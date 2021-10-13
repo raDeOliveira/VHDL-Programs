@@ -1,0 +1,72 @@
+-- Verifica Moore//
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity verifica_moore is
+port(	clk, start : in std_logic;
+		saida_moore: out std_logic;
+		saida_mealy: out std_logic;
+end verifica_moore;
+
+architecture arch of verifica_moore is
+    type stateMoore_type is (zero, um); 
+    signal stateMoore_reg, stateMoore_next : stateMoore_type;
+	 
+	 type stateMealy_type is (zero, um);
+    signal stateMealy_reg, stateMealy_next : stateMealy_type;
+
+--------
+-- moore
+begin   
+    process(clk_zero, start)
+    begin
+        if (start = '1') then 
+            stateMoore_reg <= zero;
+        elsif (clk0'event and clk0 = '1') then 
+            stateMoore_reg <= stateMoore_next;
+        else
+            null;
+        end if; 
+    end process;
+
+ process(stateMoore_reg, start)
+     begin
+     stateMoore_next <= stateMoore_reg;
+         case stateMoore_reg is
+                when zero =>
+                if start = '1' then
+                    stateMoore_next <= um;
+                    saida_moore <= '1';
+                else
+							saida_moore <= '0';
+                end if;
+            end case;
+        end process;
+    end arch;
+
+-------	 
+--mealy   
+begin   
+    process(clk)
+    begin
+        if (clk'event and clk = '1') then
+            present_state <= next_state;
+        else
+            null;
+        end if; 
+    end process;
+	 
+ process(present_state)
+ begin 
+	  next_state <= present_state;
+	  case present_state is 
+			when zero => 
+				 if saida_moore = '1' then
+					  next_state <= dois;
+					  saida_mealy <= '1';
+				else
+					saida_mealy <= '0';
+				end if;
+	  end case; 
+ end process;
+end arch; 

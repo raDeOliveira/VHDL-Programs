@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, ../Placard_Resultados/Pokemon.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Pokemon/Waveform.vwf
+source_file = 1, ../Placard_Resultados/placa_resul_jose.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/Pokemon/pokemon.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = Pokemon
+instance = comp, \pk_Win~output , pk_Win~output, Pokemon, 1
+instance = comp, \pk_Tie~output , pk_Tie~output, Pokemon, 1
+instance = comp, \jogador1~input , jogador1~input, Pokemon, 1
+instance = comp, \jogador2~input , jogador2~input, Pokemon, 1
+instance = comp, \pokemon~0 , pokemon~0, Pokemon, 1
+instance = comp, \pokemon~1 , pokemon~1, Pokemon, 1

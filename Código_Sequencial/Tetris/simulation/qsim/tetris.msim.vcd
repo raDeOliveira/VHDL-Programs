@@ -1,0 +1,64 @@
+$comment
+	File created using the following command:
+		vcd file tetris.msim.vcd -direction
+$end
+$date
+	Sat Jun 06 19:36:08 2020
+$end
+$version
+	ModelSim Version 10.3d
+$end
+$timescale
+	1ps
+$end
+
+$scope module tetris_vlg_vec_tst $end
+$var reg 4 ! branco [3:0] $end
+$var reg 4 " preto [3:0] $end
+$var wire 1 # flag $end
+$var wire 1 $ sampler $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + branco[0]~input_o $end
+$var wire 1 , branco[1]~input_o $end
+$var wire 1 - branco[2]~input_o $end
+$var wire 1 . preto[0]~input_o $end
+$var wire 1 / preto[1]~input_o $end
+$var wire 1 0 preto[2]~input_o $end
+$var wire 1 1 flag~output_o $end
+$var wire 1 2 branco[3]~input_o $end
+$var wire 1 3 preto[3]~input_o $end
+$var wire 1 4 process_0~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b100 !
+b100 "
+0#
+x$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+1-
+0.
+0/
+10
+01
+02
+03
+04
+$end
+#1000000

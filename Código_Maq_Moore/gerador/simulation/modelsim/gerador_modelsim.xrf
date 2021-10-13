@@ -1,0 +1,16 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/15.0/PSD_Exercicios/gerador/gerador.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/15.0/quartus/libraries/vhdl/ieee/timing_p.vhd
+source_file = 1, C:/altera/15.0/PSD_Exercicios/gerador/db/gerador.cbx.xml
+design_name = gerador
+instance = comp, \Moore_ot~output\, Moore_ot~output, gerador, 1
+instance = comp, \clk~input\, clk~input, gerador, 1
+instance = comp, \GERA~input\, GERA~input, gerador, 1
+instance = comp, \stateMoore_reg~0\, stateMoore_reg~0, gerador, 1
+instance = comp, \stateMoore_reg~feeder\, stateMoore_reg~feeder, gerador, 1
+instance = comp, \reset~input\, reset~input, gerador, 1
+instance = comp, \Moore_ot$latch\, Moore_ot$latch, gerador, 1
+instance = comp, \~QUARTUS_CREATED_GND~I\, ~QUARTUS_CREATED_GND~I, gerador, 1

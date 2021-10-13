@@ -1,0 +1,16 @@
+# do aula02junhoexerc3.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:29:40 on Jun 16,2020
+# vlog -work work aula02junhoexerc3.vo 
+# init_dbinfo() DATABASE ERROR: (sqlite3_open C:/altera/15.0/PSD_Exercicios/Aulas_Recuperação/aula02junhoexerc3/simulation/qsim/work/_lib.qdb): unable to open database file
+# mtilibWrite(): Unexpected null object encountered
+# ** Fatal: (vlog-9) Problem while writing token file "C:/altera/15.0/PSD_Exercicios/Aulas_Recuperação/aula02junhoexerc3/simulation/qsim/work/_temp/vlogac0y0j".
+# 
+# O sistema não conseguiu localizar o caminho especificado. (GetLastError() = 3)
+# ** Error: aula02junhoexerc3.vo(32): Verilog Compiler exiting
+# End time: 19:29:40 on Jun 16,2020, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+# ** Error: c:/altera/15.0/modelsim_ase/win32aloem/vlog failed.
+# Executing ONERROR command at macro ./aula02junhoexerc3.do line 3

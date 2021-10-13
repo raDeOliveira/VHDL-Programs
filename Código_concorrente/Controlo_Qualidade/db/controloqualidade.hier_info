@@ -1,0 +1,20 @@
+|controloqualidade
+corPrincipal[0] => ~NO_FANOUT~
+corPrincipal[1] => ~NO_FANOUT~
+corPrincipal[2] => ~NO_FANOUT~
+corPrincipal[3] => ~NO_FANOUT~
+corPrincipal[4] => ~NO_FANOUT~
+corPrincipal[5] => ~NO_FANOUT~
+corPrincipal[6] => ~NO_FANOUT~
+corPrincipal[7] => ~NO_FANOUT~
+corSecundaria[0] => ~NO_FANOUT~
+corSecundaria[1] => ~NO_FANOUT~
+corSecundaria[2] => ~NO_FANOUT~
+corSecundaria[3] => ~NO_FANOUT~
+corSecundaria[4] => ~NO_FANOUT~
+corSecundaria[5] => ~NO_FANOUT~
+corSecundaria[6] => ~NO_FANOUT~
+corSecundaria[7] => ~NO_FANOUT~
+saida <= <VCC>
+
+

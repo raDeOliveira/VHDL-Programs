@@ -1,0 +1,9 @@
+
+State Machine - |controlo_pessoas|present_state
+Name present_state.p6 present_state.p5 present_state.p4 present_state.p3 present_state.p2 present_state.p1 
+present_state.p1 0 0 0 0 0 0 
+present_state.p2 0 0 0 0 1 1 
+present_state.p3 0 0 0 1 0 1 
+present_state.p4 0 0 1 0 0 1 
+present_state.p5 0 1 0 0 0 1 
+present_state.p6 1 0 0 0 0 1 

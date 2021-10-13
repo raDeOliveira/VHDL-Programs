@@ -1,0 +1,101 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1100mV 85C Model Setup 'level'
+Slack : -3.654
+TNS   : -25.699
+
+Type  : Slow 1100mV 85C Model Setup 'clk'
+Slack : -1.518
+TNS   : -7.588
+
+Type  : Slow 1100mV 85C Model Hold 'clk'
+Slack : -1.043
+TNS   : -3.996
+
+Type  : Slow 1100mV 85C Model Hold 'level'
+Slack : 1.544
+TNS   : 0.000
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -5.583
+
+Type  : Slow 1100mV 85C Model Minimum Pulse Width 'level'
+Slack : 0.359
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Setup 'level'
+Slack : -3.747
+TNS   : -27.101
+
+Type  : Slow 1100mV 0C Model Setup 'clk'
+Slack : -1.290
+TNS   : -6.024
+
+Type  : Slow 1100mV 0C Model Hold 'clk'
+Slack : -1.145
+TNS   : -4.471
+
+Type  : Slow 1100mV 0C Model Hold 'level'
+Slack : 1.651
+TNS   : 0.000
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.724
+TNS   : -5.672
+
+Type  : Slow 1100mV 0C Model Minimum Pulse Width 'level'
+Slack : 0.317
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Setup 'clk'
+Slack : -1.008
+TNS   : -5.038
+
+Type  : Fast 1100mV 85C Model Setup 'level'
+Slack : -0.799
+TNS   : -5.330
+
+Type  : Fast 1100mV 85C Model Hold 'clk'
+Slack : 0.144
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Hold 'level'
+Slack : 0.595
+TNS   : 0.000
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'clk'
+Slack : -0.079
+TNS   : -0.389
+
+Type  : Fast 1100mV 85C Model Minimum Pulse Width 'level'
+Slack : 0.049
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Setup 'clk'
+Slack : -0.842
+TNS   : -4.210
+
+Type  : Fast 1100mV 0C Model Setup 'level'
+Slack : -0.694
+TNS   : -4.583
+
+Type  : Fast 1100mV 0C Model Hold 'clk'
+Slack : 0.071
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Hold 'level'
+Slack : 0.549
+TNS   : 0.000
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'clk'
+Slack : -0.080
+TNS   : -0.394
+
+Type  : Fast 1100mV 0C Model Minimum Pulse Width 'level'
+Slack : 0.032
+TNS   : 0.000
+
+------------------------------------------------------------

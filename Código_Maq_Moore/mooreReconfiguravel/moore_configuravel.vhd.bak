@@ -1,0 +1,56 @@
+-- moore_configuravel
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity moore_configuravel is
+port(
+    clk : in std_logic;
+    entrada : in std_logic_vector (2 downto 0);
+    saida_moore: out std_logic_vector (1 downto 0));
+end moore_configuravel;
+
+architecture arch of moore_configuravel is 
+    type stateMoore_type is (um, dois, tres); -- 3 estados Moore
+    signal present_state, next_state : stateMoore_type;
+    
+begin   
+    process(clk)
+    begin
+        if (clk'event and clk = '1') then
+            present_state <= next_state;
+        else
+            null;
+        end if; 
+    end process;
+    
+	 ---------------------
+    -- Máquina de Moore--
+    process(present_state, entrada)
+     begin 
+        next_state <= present_state; 
+        case present_state is
+		  
+				--primeiro estado
+            when um =>
+					if (entrada = "001") then
+						saida_moore <= "01";
+						next_state <= dois;
+					end if;
+				
+				--segundo estado
+            when dois => 
+                if (entrada = "010") then
+							saida_moore <= "10";
+							next_state <= tres;
+                end if;
+					 
+				--terceiro estado
+				when tres => 
+					if (entrada = "011") then
+						saida_moore <= "11";
+						next_state <= um;
+               end if;
+					
+        end case; 
+    end process;  
+end arch;

@@ -1,0 +1,10 @@
+|aula02junhoexerc3
+elementos[0] => saida.DATAIN
+elementos[1] => ~NO_FANOUT~
+elementos[2] => ~NO_FANOUT~
+elementos[3] => ~NO_FANOUT~
+elementos[4] => ~NO_FANOUT~
+elementos[5] => ~NO_FANOUT~
+saida <= elementos[0].DB_MAX_OUTPUT_PORT_TYPE
+
+

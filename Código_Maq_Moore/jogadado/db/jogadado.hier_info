@@ -1,0 +1,26 @@
+|jogadado
+clk => stateMoore_reg~1.DATAIN
+reset => stateMoore_reg~3.DATAIN
+joga => Selector5.IN3
+joga => Selector6.IN3
+joga => Selector7.IN3
+joga => Selector8.IN3
+joga => Selector9.IN3
+joga => stateMoore_next.seis.DATAB
+joga => Selector10.IN1
+joga => Selector10.IN0
+joga => Selector4.IN1
+joga => Selector5.IN1
+joga => Selector6.IN1
+joga => Selector7.IN1
+joga => Selector8.IN1
+joga => Selector9.IN1
+s_OUT[0] <= s_OUT[0]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT[1] <= s_OUT[1]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT[2] <= s_OUT[2]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT[3] <= s_OUT[3]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT[4] <= s_OUT[4]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT[5] <= s_OUT[5]$latch.DB_MAX_OUTPUT_PORT_TYPE
+s_OUT[6] <= s_OUT[6]$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

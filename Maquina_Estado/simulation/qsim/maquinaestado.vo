@@ -1,0 +1,262 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "06/04/2020 17:39:48"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module maquinaestado (
+	clk,
+	reset,
+	level,
+	Mealy_tick,
+	Moore_tick);
+input 	clk;
+input 	reset;
+input 	level;
+output 	Mealy_tick;
+output 	Moore_tick;
+
+// Design Ports Information
+// Mealy_tick	=>  Location: PIN_P22,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// Moore_tick	=>  Location: PIN_R17,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// level	=>  Location: PIN_R16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_M16,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_R21,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \level~input_o ;
+wire \clk~input_o ;
+wire \clk~inputCLKENA0_outclk ;
+wire \stateMealy_reg~feeder_combout ;
+wire \reset~input_o ;
+wire \stateMealy_reg~q ;
+wire \Mealy_tick~0_combout ;
+wire \stateMoore_reg.edge~q ;
+
+
+// Location: IOOBUF_X89_Y8_N56
+cyclonev_io_obuf \Mealy_tick~output (
+	.i(\Mealy_tick~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Mealy_tick),
+	.obar());
+// synopsys translate_off
+defparam \Mealy_tick~output .bus_hold = "false";
+defparam \Mealy_tick~output .open_drain_output = "false";
+defparam \Mealy_tick~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X89_Y8_N22
+cyclonev_io_obuf \Moore_tick~output (
+	.i(\stateMoore_reg.edge~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Moore_tick),
+	.obar());
+// synopsys translate_off
+defparam \Moore_tick~output .bus_hold = "false";
+defparam \Moore_tick~output .open_drain_output = "false";
+defparam \Moore_tick~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y8_N4
+cyclonev_io_ibuf \level~input (
+	.i(level),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\level~input_o ));
+// synopsys translate_off
+defparam \level~input .bus_hold = "false";
+defparam \level~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y35_N61
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: CLKCTRL_G10
+cyclonev_clkena \clk~inputCLKENA0 (
+	.inclk(\clk~input_o ),
+	.ena(vcc),
+	.outclk(\clk~inputCLKENA0_outclk ),
+	.enaout());
+// synopsys translate_off
+defparam \clk~inputCLKENA0 .clock_type = "global clock";
+defparam \clk~inputCLKENA0 .disable_mode = "low";
+defparam \clk~inputCLKENA0 .ena_register_mode = "always enabled";
+defparam \clk~inputCLKENA0 .ena_register_power_up = "high";
+defparam \clk~inputCLKENA0 .test_syn = "high";
+// synopsys translate_on
+
+// Location: LABCELL_X88_Y8_N21
+cyclonev_lcell_comb \stateMealy_reg~feeder (
+// Equation(s):
+// \stateMealy_reg~feeder_combout  = ( \level~input_o  )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\level~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\stateMealy_reg~feeder_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \stateMealy_reg~feeder .extended_lut = "off";
+defparam \stateMealy_reg~feeder .lut_mask = 64'h00000000FFFFFFFF;
+defparam \stateMealy_reg~feeder .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X89_Y8_N38
+cyclonev_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: FF_X88_Y8_N22
+dffeas stateMealy_reg(
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\stateMealy_reg~feeder_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\stateMealy_reg~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam stateMealy_reg.is_wysiwyg = "true";
+defparam stateMealy_reg.power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X88_Y8_N42
+cyclonev_lcell_comb \Mealy_tick~0 (
+// Equation(s):
+// \Mealy_tick~0_combout  = ( !\stateMealy_reg~q  & ( \level~input_o  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(!\level~input_o ),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(!\stateMealy_reg~q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Mealy_tick~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Mealy_tick~0 .extended_lut = "off";
+defparam \Mealy_tick~0 .lut_mask = 64'h0F0F0F0F00000000;
+defparam \Mealy_tick~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: FF_X88_Y8_N43
+dffeas \stateMoore_reg.edge (
+	.clk(\clk~inputCLKENA0_outclk ),
+	.d(\Mealy_tick~0_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\stateMoore_reg.edge~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \stateMoore_reg.edge .is_wysiwyg = "true";
+defparam \stateMoore_reg.edge .power_up = "low";
+// synopsys translate_on
+
+// Location: MLABCELL_X34_Y32_N3
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule

@@ -1,0 +1,135 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "06/16/2020 19:29:39"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module aula02junhoexerc3 (
+	elementos,
+	saida);
+input 	[5:0] elementos;
+output 	saida;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \elementos[1]~input_o ;
+wire \elementos[2]~input_o ;
+wire \elementos[3]~input_o ;
+wire \elementos[4]~input_o ;
+wire \elementos[5]~input_o ;
+wire \saida~output_o ;
+wire \elementos[0]~input_o ;
+
+
+cyclonev_io_obuf \saida~output (
+	.i(!\elementos[0]~input_o ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\saida~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \saida~output .bus_hold = "false";
+defparam \saida~output .open_drain_output = "false";
+defparam \saida~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \elementos[0]~input (
+	.i(elementos[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\elementos[0]~input_o ));
+// synopsys translate_off
+defparam \elementos[0]~input .bus_hold = "false";
+defparam \elementos[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \elementos[1]~input (
+	.i(elementos[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\elementos[1]~input_o ));
+// synopsys translate_off
+defparam \elementos[1]~input .bus_hold = "false";
+defparam \elementos[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \elementos[2]~input (
+	.i(elementos[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\elementos[2]~input_o ));
+// synopsys translate_off
+defparam \elementos[2]~input .bus_hold = "false";
+defparam \elementos[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \elementos[3]~input (
+	.i(elementos[3]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\elementos[3]~input_o ));
+// synopsys translate_off
+defparam \elementos[3]~input .bus_hold = "false";
+defparam \elementos[3]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \elementos[4]~input (
+	.i(elementos[4]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\elementos[4]~input_o ));
+// synopsys translate_off
+defparam \elementos[4]~input .bus_hold = "false";
+defparam \elementos[4]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \elementos[5]~input (
+	.i(elementos[5]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\elementos[5]~input_o ));
+// synopsys translate_off
+defparam \elementos[5]~input .bus_hold = "false";
+defparam \elementos[5]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign saida = \saida~output_o ;
+
+endmodule

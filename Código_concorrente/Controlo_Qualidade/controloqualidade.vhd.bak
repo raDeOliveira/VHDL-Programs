@@ -1,0 +1,16 @@
+-- controloqualidade // PSD
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity controloqualidade is
+port (bits_entrada: in std_logic_vector(7 downto 0);
+		bits_entrada2: in std_logic_vector(7 downto 0);
+		led_verde, led_vermelho: out std_logic);
+end controloqualidade;
+
+architecture arch of controloqualidade is
+
+begin
+	led_verde <= bits_entrada and bits_entrada2("00000000");
+	led_vermelho <= bits_entrada != bits_entrada2;
+end arch;

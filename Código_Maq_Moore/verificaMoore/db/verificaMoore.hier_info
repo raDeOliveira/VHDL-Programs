@@ -1,0 +1,9 @@
+|verificaMoore
+clk => stateMealy_reg.CLK
+clk => stateMoore_reg.CLK
+start => stateMealy_reg.ACLR
+start => stateMoore_reg.ACLR
+saida_moore << stateMoore_reg.DB_MAX_OUTPUT_PORT_TYPE
+saida_mealy <= saida_mealy$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

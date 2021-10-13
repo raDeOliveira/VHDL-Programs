@@ -1,0 +1,94 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/exercicioMUX/simulation/qsim
+vexercicioMUX
+Z1 !s110 1591304500
+!i10b 1
+!s100 ;O<I2]T8cQR4XD8hY]_L:3
+IHWPO]gZIeP>Sel_jc]ab^0
+Z2 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591304498
+8exercicioMUX.vo
+FexercicioMUX.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591304500.144000
+!s107 exercicioMUX.vo|
+!s90 -work|work|exercicioMUX.vo|
+!i113 1
+Z4 o-work work
+nexercicio@m@u@x
+vexercicioMUX_vlg_check_tst
+R1
+!i10b 1
+!s100 n]V]UVO0z72oIF;GO@h4<1
+I]WMCJ?9W6HiiVXWc;kE`X0
+R2
+R0
+Z5 w1591304493
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 64
+R3
+r1
+!s85 0
+31
+Z8 !s108 1591304500.310000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+nexercicio@m@u@x_vlg_check_tst
+vexercicioMUX_vlg_sample_tst
+R1
+!i10b 1
+!s100 ]JLXNoalFmUi70k<0UKMV0
+I`4^9aPDbElTQHh@`;<RGI1
+R2
+R0
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+nexercicio@m@u@x_vlg_sample_tst
+vexercicioMUX_vlg_vec_tst
+R1
+!i10b 1
+!s100 k`>ENTMX2gEi4CADZ085[2
+IQG<_kaAAnW?666jk2SG140
+R2
+R0
+R5
+R6
+R7
+L0 159
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+nexercicio@m@u@x_vlg_vec_tst

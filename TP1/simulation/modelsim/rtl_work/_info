@@ -1,0 +1,31 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD/TP1/simulation/modelsim
+Emux
+w1587024500
+DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+R0
+8C:/altera/15.0/PSD/TP1/MUX.vhd
+FC:/altera/15.0/PSD/TP1/MUX.vhd
+l0
+L3
+V8S<So1ZQ99h]i]0fz<?h10
+!s100 <BDS]fmDO]ajXf8?VYGMB3
+OV;C;10.3d;59
+31
+!s110 1587025247
+!i10b 1
+!s108 1587025247.303000
+!s90 -reportprogress|300|-93|-work|work|C:/altera/15.0/PSD/TP1/MUX.vhd|
+!s107 C:/altera/15.0/PSD/TP1/MUX.vhd|
+!i113 1
+o-93 -work work
+tExplicit 1

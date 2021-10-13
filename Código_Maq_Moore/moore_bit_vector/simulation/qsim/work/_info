@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/aulajunho/simulation/qsim
+vaula09
+!s110 1591815574
+!i10b 1
+!s100 6JO]UOTk?M^^M@<1?^A?52
+IF?PgOIW4?omUbEHo]aWl41
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591815573
+8aula09.vo
+Faula09.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591815574.872000
+!s107 aula09.vo|
+!s90 -work|work|aula09.vo|
+!i113 1
+Z3 o-work work
+vaula09_vlg_check_tst
+Z4 !s110 1591815575
+!i10b 1
+!s100 :;cLXU;H33@OdzkfMkjU73
+I87MfgFTh4=lz9i9lgGKYT3
+R1
+R0
+Z5 w1591815568
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 60
+R2
+r1
+!s85 0
+31
+Z8 !s108 1591815575.041000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vaula09_vlg_sample_tst
+R4
+!i10b 1
+!s100 5DHXb188JXDh2eN84K?jl1
+IcOjBlT@CKeXYROW_8<NB_1
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vaula09_vlg_vec_tst
+R4
+!i10b 1
+!s100 e>`EoJdRoS_lio4jD<;OV3
+ImAgEOKT1[7h2cll4@zn3V0
+R1
+R0
+R5
+R6
+R7
+L0 260
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

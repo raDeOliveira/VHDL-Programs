@@ -1,0 +1,9 @@
+|verificaMoore2
+clk => stateMoore_reg.CLK
+start => stateMoore_next.OUTPUTSELECT
+start => stateMoore_next.OUTPUTSELECT
+start => saida_moore$latch.LATCH_ENABLE
+saida_moore << saida_moore$latch.DB_MAX_OUTPUT_PORT_TYPE
+saida_mealy <= comb.DB_MAX_OUTPUT_PORT_TYPE
+
+

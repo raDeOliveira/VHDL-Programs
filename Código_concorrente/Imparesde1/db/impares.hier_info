@@ -1,0 +1,8 @@
+|impares
+bits_entrada[0] => saida.IN0
+bits_entrada[1] => saida.IN1
+bits_entrada[2] => saida.IN0
+bits_entrada[3] => saida.IN1
+saida <= saida.DB_MAX_OUTPUT_PORT_TYPE
+
+

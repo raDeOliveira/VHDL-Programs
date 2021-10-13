@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/encriptador/simulation/qsim
+vencript
+!s110 1591254364
+!i10b 1
+!s100 IXR9`;k^CzE><NlknK`=93
+I9eZfU[RXZRLm<2jZh912i2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1591254363
+8encript.vo
+Fencript.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591254364.840000
+!s107 encript.vo|
+!s90 -work|work|encript.vo|
+!i113 1
+Z3 o-work work
+vencript_vlg_check_tst
+Z4 !s110 1591254365
+!i10b 1
+!s100 ?ejn_0b5Ij7Bf8zzR1<l`0
+IEb`Rj4:Qh8EjAPY=92Ao^1
+R1
+R0
+Z5 w1591254358
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 58
+R2
+r1
+!s85 0
+31
+Z8 !s108 1591254364.999000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vencript_vlg_sample_tst
+R4
+!i10b 1
+!s100 :<n9Vc<^eYl2`e5ljXeKn0
+IQ>ATUm>[bbGLbOg3azBWf3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vencript_vlg_vec_tst
+R4
+!i10b 1
+!s100 1:41n3TMThW?3S1:`YVoY1
+IT7G?BC6>S;KKM4LU[9o9:3
+R1
+R0
+R5
+R6
+R7
+L0 153
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

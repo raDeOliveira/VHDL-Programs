@@ -1,0 +1,281 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "06/04/2020 23:25:23"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module mooreReconfiguravel (
+	Clk,
+	max,
+	outMoore);
+input 	Clk;
+input 	[2:0] max;
+output 	[2:0] outMoore;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \outMoore[0]~output_o ;
+wire \outMoore[1]~output_o ;
+wire \outMoore[2]~output_o ;
+wire \Clk~input_o ;
+wire \max[0]~input_o ;
+wire \max[1]~input_o ;
+wire \max[2]~input_o ;
+wire \Selector1~0_combout ;
+wire \PresentState.b~q ;
+wire \Selector2~0_combout ;
+wire \PresentState.c~q ;
+wire \Selector0~0_combout ;
+wire \PresentState.a~q ;
+
+
+cyclonev_io_obuf \outMoore[0]~output (
+	.i(!\PresentState.a~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outMoore[0]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outMoore[0]~output .bus_hold = "false";
+defparam \outMoore[0]~output .open_drain_output = "false";
+defparam \outMoore[0]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outMoore[1]~output (
+	.i(\PresentState.b~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outMoore[1]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outMoore[1]~output .bus_hold = "false";
+defparam \outMoore[1]~output .open_drain_output = "false";
+defparam \outMoore[1]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \outMoore[2]~output (
+	.i(\PresentState.c~q ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\outMoore[2]~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \outMoore[2]~output .bus_hold = "false";
+defparam \outMoore[2]~output .open_drain_output = "false";
+defparam \outMoore[2]~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \Clk~input (
+	.i(Clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\Clk~input_o ));
+// synopsys translate_off
+defparam \Clk~input .bus_hold = "false";
+defparam \Clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \max[0]~input (
+	.i(max[0]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\max[0]~input_o ));
+// synopsys translate_off
+defparam \max[0]~input .bus_hold = "false";
+defparam \max[0]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \max[1]~input (
+	.i(max[1]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\max[1]~input_o ));
+// synopsys translate_off
+defparam \max[1]~input .bus_hold = "false";
+defparam \max[1]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \max[2]~input (
+	.i(max[2]),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\max[2]~input_o ));
+// synopsys translate_off
+defparam \max[2]~input .bus_hold = "false";
+defparam \max[2]~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \Selector1~0 (
+// Equation(s):
+// \Selector1~0_combout  = ( \max[2]~input_o  & ( !\PresentState.a~q  ) ) # ( !\max[2]~input_o  & ( (!\PresentState.a~q  & (((!\max[0]~input_o ) # (\max[1]~input_o )))) # (\PresentState.a~q  & (\PresentState.b~q  & (!\max[0]~input_o  & \max[1]~input_o ))) ) 
+// )
+
+	.dataa(!\PresentState.a~q ),
+	.datab(!\PresentState.b~q ),
+	.datac(!\max[0]~input_o ),
+	.datad(!\max[1]~input_o ),
+	.datae(!\max[2]~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector1~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector1~0 .extended_lut = "off";
+defparam \Selector1~0 .lut_mask = 64'hA0BAAAAAA0BAAAAA;
+defparam \Selector1~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \PresentState.b (
+	.clk(\Clk~input_o ),
+	.d(\Selector1~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\PresentState.b~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \PresentState.b .is_wysiwyg = "true";
+defparam \PresentState.b .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \Selector2~0 (
+// Equation(s):
+// \Selector2~0_combout  = ( \max[2]~input_o  & ( ((\PresentState.c~q  & (!\max[0]~input_o  & !\max[1]~input_o ))) # (\PresentState.b~q ) ) ) # ( !\max[2]~input_o  & ( (\PresentState.b~q  & ((!\max[1]~input_o ) # (\max[0]~input_o ))) ) )
+
+	.dataa(!\PresentState.b~q ),
+	.datab(!\PresentState.c~q ),
+	.datac(!\max[0]~input_o ),
+	.datad(!\max[1]~input_o ),
+	.datae(!\max[2]~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector2~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector2~0 .extended_lut = "off";
+defparam \Selector2~0 .lut_mask = 64'h5505755555057555;
+defparam \Selector2~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \PresentState.c (
+	.clk(\Clk~input_o ),
+	.d(\Selector2~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\PresentState.c~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \PresentState.c .is_wysiwyg = "true";
+defparam \PresentState.c .power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb \Selector0~0 (
+// Equation(s):
+// \Selector0~0_combout  = ( \max[2]~input_o  & ( (!\PresentState.c~q ) # ((!\max[0]~input_o  & !\max[1]~input_o )) ) ) # ( !\max[2]~input_o  & ( (!\PresentState.c~q  & (((!\max[0]~input_o ) # (\max[1]~input_o )) # (\PresentState.a~q ))) ) )
+
+	.dataa(!\PresentState.a~q ),
+	.datab(!\PresentState.c~q ),
+	.datac(!\max[0]~input_o ),
+	.datad(!\max[1]~input_o ),
+	.datae(!\max[2]~input_o ),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Selector0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \Selector0~0 .extended_lut = "off";
+defparam \Selector0~0 .lut_mask = 64'hC4CCFCCCC4CCFCCC;
+defparam \Selector0~0 .shared_arith = "off";
+// synopsys translate_on
+
+dffeas \PresentState.a (
+	.clk(\Clk~input_o ),
+	.d(\Selector0~0_combout ),
+	.asdata(vcc),
+	.clrn(vcc),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\PresentState.a~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam \PresentState.a .is_wysiwyg = "true";
+defparam \PresentState.a .power_up = "low";
+// synopsys translate_on
+
+assign outMoore[0] = \outMoore[0]~output_o ;
+
+assign outMoore[1] = \outMoore[1]~output_o ;
+
+assign outMoore[2] = \outMoore[2]~output_o ;
+
+endmodule

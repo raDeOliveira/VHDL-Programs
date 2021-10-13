@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD_Exercicios/aula18/simulation/qsim
+vrecuperacao
+!s110 1592502853
+!i10b 1
+!s100 57_O>]mJZB@QUiX>Ez6VC0
+IOz`8V3^zk5^QTBaD;b=Mn2
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1592502851
+8recuperacao.vo
+Frecuperacao.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1592502853.858000
+!s107 recuperacao.vo|
+!s90 -work|work|recuperacao.vo|
+!i113 1
+Z3 o-work work
+vrecuperacao_vlg_check_tst
+Z4 !s110 1592502854
+!i10b 1
+!s100 _OV3lga_IfVL0fT5f?gGZ3
+IzS]dhjB9RTG70I]TCfYgP1
+R1
+R0
+Z5 w1592502847
+Z6 8Waveform1.vwf.vt
+Z7 FWaveform1.vwf.vt
+L0 60
+R2
+r1
+!s85 0
+31
+Z8 !s108 1592502854.089000
+Z9 !s107 Waveform1.vwf.vt|
+Z10 !s90 -work|work|Waveform1.vwf.vt|
+!i113 1
+R3
+vrecuperacao_vlg_sample_tst
+R4
+!i10b 1
+!s100 P]c`J`g2^fP7QD87_PIGE3
+IG85M:59GBf[I=Zi;F;hWe3
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vrecuperacao_vlg_vec_tst
+R4
+!i10b 1
+!s100 b14_?hohYGQC]Mnlg`aZP0
+IRFIOYYzUTS3@BW5ISHLFS1
+R1
+R0
+R5
+R6
+R7
+L0 262
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

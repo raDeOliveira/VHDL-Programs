@@ -1,0 +1,36 @@
+# do mooreReconfiguravel.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# 
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:25:25 on Jun 04,2020
+# vlog -work work mooreReconfiguravel.vo 
+# -- Compiling module mooreReconfiguravel
+# 
+# Top level modules:
+# 	mooreReconfiguravel
+# End time: 23:25:26 on Jun 04,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 23:25:26 on Jun 04,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module mooreReconfiguravel_vlg_sample_tst
+# -- Compiling module mooreReconfiguravel_vlg_check_tst
+# -- Compiling module mooreReconfiguravel_vlg_vec_tst
+# 
+# Top level modules:
+# 	mooreReconfiguravel_vlg_vec_tst
+# End time: 23:25:26 on Jun 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "mooreReconfiguravel.do" 
+# Start time: 23:25:26 on Jun 04,2020
+# Loading work.mooreReconfiguravel_vlg_vec_tst
+# Loading work.mooreReconfiguravel
+# Loading altera_ver.dffeas
+# Loading work.mooreReconfiguravel_vlg_sample_tst
+# Loading work.mooreReconfiguravel_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(186)
+#    Time: 1 us  Iteration: 0  Instance: /mooreReconfiguravel_vlg_vec_tst/tb_out
+# End time: 23:25:26 on Jun 04,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0

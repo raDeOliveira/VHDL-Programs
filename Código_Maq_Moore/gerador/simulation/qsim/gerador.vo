@@ -1,0 +1,233 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "06/04/2020 08:19:18"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module gerador (
+	clk,
+	reset,
+	GERA,
+	Moore_ot);
+input 	clk;
+input 	reset;
+input 	GERA;
+output 	Moore_ot;
+
+// Design Ports Information
+// Moore_ot	=>  Location: PIN_N6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// GERA	=>  Location: PIN_P6,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// clk	=>  Location: PIN_W8,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// reset	=>  Location: PIN_W9,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \~QUARTUS_CREATED_GND~I_combout ;
+wire \clk~input_o ;
+wire \GERA~input_o ;
+wire \stateMoore_reg~0_combout ;
+wire \stateMoore_reg~feeder_combout ;
+wire \reset~input_o ;
+wire \stateMoore_reg~q ;
+wire \Moore_ot$latch~combout ;
+
+
+// Location: IOOBUF_X4_Y0_N2
+cyclonev_io_obuf \Moore_ot~output (
+	.i(\Moore_ot$latch~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(Moore_ot),
+	.obar());
+// synopsys translate_off
+defparam \Moore_ot~output .bus_hold = "false";
+defparam \Moore_ot~output .open_drain_output = "false";
+defparam \Moore_ot~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X4_Y0_N52
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X4_Y0_N18
+cyclonev_io_ibuf \GERA~input (
+	.i(GERA),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\GERA~input_o ));
+// synopsys translate_off
+defparam \GERA~input .bus_hold = "false";
+defparam \GERA~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LABCELL_X4_Y1_N24
+cyclonev_lcell_comb \stateMoore_reg~0 (
+// Equation(s):
+// \stateMoore_reg~0_combout  = ( !\GERA~input_o  & ( \stateMoore_reg~q  ) ) # ( \GERA~input_o  & ( !\stateMoore_reg~q  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\GERA~input_o ),
+	.dataf(!\stateMoore_reg~q ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\stateMoore_reg~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \stateMoore_reg~0 .extended_lut = "off";
+defparam \stateMoore_reg~0 .lut_mask = 64'h0000FFFFFFFF0000;
+defparam \stateMoore_reg~0 .shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X4_Y1_N51
+cyclonev_lcell_comb \stateMoore_reg~feeder (
+// Equation(s):
+// \stateMoore_reg~feeder_combout  = \stateMoore_reg~0_combout 
+
+	.dataa(gnd),
+	.datab(!\stateMoore_reg~0_combout ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\stateMoore_reg~feeder_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \stateMoore_reg~feeder .extended_lut = "off";
+defparam \stateMoore_reg~feeder .lut_mask = 64'h3333333333333333;
+defparam \stateMoore_reg~feeder .shared_arith = "off";
+// synopsys translate_on
+
+// Location: IOIBUF_X4_Y0_N35
+cyclonev_io_ibuf \reset~input (
+	.i(reset),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\reset~input_o ));
+// synopsys translate_off
+defparam \reset~input .bus_hold = "false";
+defparam \reset~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: FF_X4_Y1_N53
+dffeas stateMoore_reg(
+	.clk(\clk~input_o ),
+	.d(\stateMoore_reg~feeder_combout ),
+	.asdata(vcc),
+	.clrn(!\reset~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\stateMoore_reg~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam stateMoore_reg.is_wysiwyg = "true";
+defparam stateMoore_reg.power_up = "low";
+// synopsys translate_on
+
+// Location: LABCELL_X4_Y1_N57
+cyclonev_lcell_comb Moore_ot$latch(
+// Equation(s):
+// \Moore_ot$latch~combout  = ( \Moore_ot$latch~combout  & ( \GERA~input_o  ) ) # ( \Moore_ot$latch~combout  & ( !\GERA~input_o  & ( \stateMoore_reg~q  ) ) ) # ( !\Moore_ot$latch~combout  & ( !\GERA~input_o  & ( \stateMoore_reg~q  ) ) )
+
+	.dataa(!\stateMoore_reg~q ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(!\Moore_ot$latch~combout ),
+	.dataf(!\GERA~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\Moore_ot$latch~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam Moore_ot$latch.extended_lut = "off";
+defparam Moore_ot$latch.lut_mask = 64'h555555550000FFFF;
+defparam Moore_ot$latch.shared_arith = "off";
+// synopsys translate_on
+
+// Location: LABCELL_X85_Y52_N3
+cyclonev_lcell_comb \~QUARTUS_CREATED_GND~I (
+// Equation(s):
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\~QUARTUS_CREATED_GND~I_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \~QUARTUS_CREATED_GND~I .extended_lut = "off";
+defparam \~QUARTUS_CREATED_GND~I .lut_mask = 64'h0000000000000000;
+defparam \~QUARTUS_CREATED_GND~I .shared_arith = "off";
+// synopsys translate_on
+
+endmodule

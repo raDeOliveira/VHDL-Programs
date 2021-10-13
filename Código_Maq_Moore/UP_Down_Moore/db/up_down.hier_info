@@ -1,0 +1,10 @@
+|up_down
+clk => stateMoore_reg.CLK
+rst => stateMoore_reg.ACLR
+botao => s1$latch.LATCH_ENABLE
+botao => s0$latch.LATCH_ENABLE
+botao => stateMoore_reg.ENA
+s0 <= s0$latch.DB_MAX_OUTPUT_PORT_TYPE
+s1 <= s1$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+

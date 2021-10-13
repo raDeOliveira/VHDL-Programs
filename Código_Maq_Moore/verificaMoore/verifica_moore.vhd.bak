@@ -1,0 +1,71 @@
+-- Verifica Moore//
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity verifica_moore is
+port(	clk, start : in std_logic;
+		saida_moore: buffer std_logic;
+		saida_mealy: out std_logic);
+end verifica_moore;
+
+architecture arch of verifica_moore is
+    type stateMoore_type is (zero, um); 
+    signal stateMoore_reg, stateMoore_next : stateMoore_type;
+	 
+	 type stateMealy_type is (zero, um);
+    signal stateMealy_reg, stateMealy_next : stateMealy_type;
+
+--------
+-- moore
+begin   
+    process(clk, start)
+    begin
+        if (start = '1') then 
+            stateMoore_reg <= zero;
+        elsif (clk'event and clk = '1') then 
+            stateMoore_reg <= stateMoore_next;
+        else
+            null;
+        end if; 
+    end process;
+
+ process(stateMoore_reg, start)
+     begin
+     stateMoore_next <= stateMoore_reg;
+         case stateMoore_reg is
+                when zero =>
+                if start = '1' then
+                    stateMoore_next <= um;
+                    saida_moore <= '1';
+                else
+							saida_moore <= '0';
+                end if;
+            end case;
+        end process;
+    
+
+-------	 
+--mealy 
+    process(clk)
+    begin
+        if (clk'event and clk = '1') then
+            stateMealy_reg <= stateMealy_next;
+        else
+            null;
+        end if; 
+    end process;
+	 
+ process(stateMealy_reg)
+ begin 
+	  stateMealy_next <= stateMealy_reg;
+	  case stateMealy_reg is 
+			when zero => 
+				 if saida_moore = '1' then
+					  stateMealy_next <= um;
+					  saida_mealy <= '1';
+				else
+					saida_mealy <= '0';
+				end if;
+	  end case; 
+ end process;
+end arch; 

@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.0/mooremachine/simulation/qsim
+vmooremachine
+Z0 !s110 1591309141
+!i10b 1
+!s100 Ta9@H[V]0P_UWiORi4?6U0
+IzzLNfT5TmIiAG9UE72PiV3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+Z2 dC:/altera/15.0/PSD_Exercicios/mooremachine/simulation/qsim
+w1591309139
+8mooremachine.vo
+Fmooremachine.vo
+L0 32
+Z3 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1591309141.445000
+!s107 mooremachine.vo|
+!s90 -work|work|mooremachine.vo|
+!i113 1
+Z4 o-work work
+vmooremachine_vlg_check_tst
+R0
+!i10b 1
+!s100 0F;Q6BhXT2kTTLQY@kjDX2
+I<^k5fzOP1`6hXbYE2TB:S2
+R1
+R2
+Z5 w1591309135
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 68
+R3
+r1
+!s85 0
+31
+Z8 !s108 1591309141.610000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R4
+vmooremachine_vlg_sample_tst
+R0
+!i10b 1
+!s100 eoX<lYVAW7JmbhQhUoezW0
+ImFBF2@99RIPDGeRXnD`Ho0
+R1
+R2
+R5
+R6
+R7
+L0 30
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4
+vmooremachine_vlg_vec_tst
+R0
+!i10b 1
+!s100 ?>7nngW8?zPBdBo`U8aJ<1
+ITN8=37898dXijS@mH7?RB2
+R1
+R2
+R5
+R6
+R7
+L0 491
+R3
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R4

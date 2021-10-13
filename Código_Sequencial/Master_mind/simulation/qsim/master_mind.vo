@@ -1,0 +1,393 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "06/06/2020 19:04:25"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module master_mind (
+	ja_pino0,
+	ja_pino1,
+	ja_pino2,
+	ja_pino3,
+	ja_pino4,
+	jb_pino0,
+	jb_pino1,
+	jb_pino2,
+	jb_pino3,
+	jb_pino4,
+	led0,
+	led1,
+	led2,
+	led3,
+	led4,
+	flag);
+input 	ja_pino0;
+input 	ja_pino1;
+input 	ja_pino2;
+input 	ja_pino3;
+input 	ja_pino4;
+input 	jb_pino0;
+input 	jb_pino1;
+input 	jb_pino2;
+input 	jb_pino3;
+input 	jb_pino4;
+output 	led0;
+output 	led1;
+output 	led2;
+output 	led3;
+output 	led4;
+output 	flag;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \ja_pino0~input_o ;
+wire \jb_pino0~input_o ;
+wire \led0~output_o ;
+wire \led1~output_o ;
+wire \led2~output_o ;
+wire \led3~output_o ;
+wire \led4~output_o ;
+wire \flag~output_o ;
+wire \ja_pino1~input_o ;
+wire \jb_pino1~input_o ;
+wire \process_0~0_combout ;
+wire \ja_pino2~input_o ;
+wire \jb_pino2~input_o ;
+wire \process_0~1_combout ;
+wire \ja_pino3~input_o ;
+wire \jb_pino3~input_o ;
+wire \process_0~2_combout ;
+wire \ja_pino4~input_o ;
+wire \jb_pino4~input_o ;
+wire \process_0~3_combout ;
+
+
+cyclonev_io_obuf \led0~output (
+	.i(vcc),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led0~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led0~output .bus_hold = "false";
+defparam \led0~output .open_drain_output = "false";
+defparam \led0~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led1~output (
+	.i(!\process_0~0_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led1~output .bus_hold = "false";
+defparam \led1~output .open_drain_output = "false";
+defparam \led1~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led2~output (
+	.i(!\process_0~1_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led2~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led2~output .bus_hold = "false";
+defparam \led2~output .open_drain_output = "false";
+defparam \led2~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led3~output (
+	.i(!\process_0~2_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led3~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led3~output .bus_hold = "false";
+defparam \led3~output .open_drain_output = "false";
+defparam \led3~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \led4~output (
+	.i(!\process_0~3_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\led4~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \led4~output .bus_hold = "false";
+defparam \led4~output .open_drain_output = "false";
+defparam \led4~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \flag~output (
+	.i(!\process_0~3_combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\flag~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \flag~output .bus_hold = "false";
+defparam \flag~output .open_drain_output = "false";
+defparam \flag~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \ja_pino1~input (
+	.i(ja_pino1),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\ja_pino1~input_o ));
+// synopsys translate_off
+defparam \ja_pino1~input .bus_hold = "false";
+defparam \ja_pino1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \jb_pino1~input (
+	.i(jb_pino1),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\jb_pino1~input_o ));
+// synopsys translate_off
+defparam \jb_pino1~input .bus_hold = "false";
+defparam \jb_pino1~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \process_0~0 (
+// Equation(s):
+// \process_0~0_combout  = !\ja_pino1~input_o  $ (!\jb_pino1~input_o )
+
+	.dataa(!\ja_pino1~input_o ),
+	.datab(!\jb_pino1~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\process_0~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \process_0~0 .extended_lut = "off";
+defparam \process_0~0 .lut_mask = 64'h6666666666666666;
+defparam \process_0~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \ja_pino2~input (
+	.i(ja_pino2),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\ja_pino2~input_o ));
+// synopsys translate_off
+defparam \ja_pino2~input .bus_hold = "false";
+defparam \ja_pino2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \jb_pino2~input (
+	.i(jb_pino2),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\jb_pino2~input_o ));
+// synopsys translate_off
+defparam \jb_pino2~input .bus_hold = "false";
+defparam \jb_pino2~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \process_0~1 (
+// Equation(s):
+// \process_0~1_combout  = !\ja_pino2~input_o  $ (!\jb_pino2~input_o )
+
+	.dataa(!\ja_pino2~input_o ),
+	.datab(!\jb_pino2~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\process_0~1_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \process_0~1 .extended_lut = "off";
+defparam \process_0~1 .lut_mask = 64'h6666666666666666;
+defparam \process_0~1 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \ja_pino3~input (
+	.i(ja_pino3),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\ja_pino3~input_o ));
+// synopsys translate_off
+defparam \ja_pino3~input .bus_hold = "false";
+defparam \ja_pino3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \jb_pino3~input (
+	.i(jb_pino3),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\jb_pino3~input_o ));
+// synopsys translate_off
+defparam \jb_pino3~input .bus_hold = "false";
+defparam \jb_pino3~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \process_0~2 (
+// Equation(s):
+// \process_0~2_combout  = !\ja_pino3~input_o  $ (!\jb_pino3~input_o )
+
+	.dataa(!\ja_pino3~input_o ),
+	.datab(!\jb_pino3~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\process_0~2_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \process_0~2 .extended_lut = "off";
+defparam \process_0~2 .lut_mask = 64'h6666666666666666;
+defparam \process_0~2 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \ja_pino4~input (
+	.i(ja_pino4),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\ja_pino4~input_o ));
+// synopsys translate_off
+defparam \ja_pino4~input .bus_hold = "false";
+defparam \ja_pino4~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \jb_pino4~input (
+	.i(jb_pino4),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\jb_pino4~input_o ));
+// synopsys translate_off
+defparam \jb_pino4~input .bus_hold = "false";
+defparam \jb_pino4~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \process_0~3 (
+// Equation(s):
+// \process_0~3_combout  = !\ja_pino4~input_o  $ (!\jb_pino4~input_o )
+
+	.dataa(!\ja_pino4~input_o ),
+	.datab(!\jb_pino4~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\process_0~3_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \process_0~3 .extended_lut = "off";
+defparam \process_0~3 .lut_mask = 64'h6666666666666666;
+defparam \process_0~3 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \ja_pino0~input (
+	.i(ja_pino0),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\ja_pino0~input_o ));
+// synopsys translate_off
+defparam \ja_pino0~input .bus_hold = "false";
+defparam \ja_pino0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \jb_pino0~input (
+	.i(jb_pino0),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\jb_pino0~input_o ));
+// synopsys translate_off
+defparam \jb_pino0~input .bus_hold = "false";
+defparam \jb_pino0~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign led0 = \led0~output_o ;
+
+assign led1 = \led1~output_o ;
+
+assign led2 = \led2~output_o ;
+
+assign led3 = \led3~output_o ;
+
+assign led4 = \led4~output_o ;
+
+assign flag = \flag~output_o ;
+
+endmodule

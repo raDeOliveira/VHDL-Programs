@@ -1,0 +1,17 @@
+-- encriptador // ver2
+library ieee;
+usee ieee.std_logic_1164.all;
+
+entity encriptador2 is
+port(	palavra : in std_logic_vector(2 downto 0);
+		saida : out std_logic;
+end encriptador2;
+
+architecture bhv of encriptador2 is
+signal p1, p2, p3 : std_logic;
+
+begin
+	p1 <= palavra(2) or palavra(1) or palavra(0);
+	p2 <= palavra(2) and palavra(1) and palavra(0);
+	p3 <= palavra(2) xor palavra(1) and palavra(0);
+end bhv;

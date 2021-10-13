@@ -1,0 +1,18 @@
+|ADN
+a => b_out.IN0
+b => b2_out.IN0
+c => b3_out.IN0
+d => b4_out.IN0
+e => b5_out.IN0
+a2 => b_out.IN1
+b2 => b2_out.IN1
+c2 => b3_out.IN1
+d2 => b4_out.IN1
+e2 => b5_out.IN1
+b_out <= b_out.DB_MAX_OUTPUT_PORT_TYPE
+b2_out <= b2_out.DB_MAX_OUTPUT_PORT_TYPE
+b3_out <= b3_out.DB_MAX_OUTPUT_PORT_TYPE
+b4_out <= b4_out.DB_MAX_OUTPUT_PORT_TYPE
+b5_out <= b5_out.DB_MAX_OUTPUT_PORT_TYPE
+
+

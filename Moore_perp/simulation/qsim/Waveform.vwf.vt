@@ -1,0 +1,346 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// *****************************************************************************
+// This file contains a Verilog test bench with test vectors .The test vectors  
+// are exported from a vector file in the Quartus Waveform Editor and apply to  
+// the top level entity of the current Quartus project .The user can use this   
+// testbench to simulate his design using a third-party simulation tool .       
+// *****************************************************************************
+// Generated on "06/10/2020 20:27:08"
+                                                                        
+// Verilog Self-Checking Test Bench (with test vectors) for design :    moore_perp
+// 
+// Simulation tool : 3rd Party
+// 
+
+`timescale 1 ps/ 1 ps
+module moore_perp_vlg_sample_tst(
+	clk,
+	rst,
+	sampler_tx
+);
+input  clk;
+input  rst;
+output sampler_tx;
+
+reg sample;
+time current_time;
+always @(clk or rst)
+                                                                                
+begin                                                 
+ if ($realtime > 0)                                   
+ begin                                                
+    if ($realtime == 0 || $realtime != current_time)  
+    begin                                             
+        if (sample === 1'bx)                          
+            sample = 0;                               
+        else                                          
+            sample = ~sample;                         
+    end                                               
+    current_time = $realtime;                         
+ end                                                  
+end                                                   
+
+assign sampler_tx = sample;
+endmodule
+
+module moore_perp_vlg_check_tst (
+	s0,
+	s1,
+	s2,
+	sampler_rx
+);
+input  s0;
+input  s1;
+input  s2;
+input sampler_rx;
+
+reg  s0_expected;
+reg  s1_expected;
+reg  s2_expected;
+
+reg  s0_prev;
+reg  s1_prev;
+reg  s2_prev;
+
+reg  s0_expected_prev;
+reg  s1_expected_prev;
+reg  s2_expected_prev;
+
+reg  last_s0_exp;
+reg  last_s1_exp;
+reg  last_s2_exp;
+
+reg trigger;
+
+integer i;
+integer nummismatches;
+
+reg [1:3] on_first_change ;
+
+
+initial
+begin
+trigger = 0;
+i = 0;
+nummismatches = 0;
+on_first_change = 3'b1;
+end
+
+// update real /o prevs
+
+always @(trigger)
+begin
+	s0_prev = s0;
+	s1_prev = s1;
+	s2_prev = s2;
+end
+
+// update expected /o prevs
+
+always @(trigger)
+begin
+	s0_expected_prev = s0_expected;
+	s1_expected_prev = s1_expected;
+	s2_expected_prev = s2_expected;
+end
+
+
+
+// expected s0
+initial
+begin
+	s0_expected = 1'bX;
+end 
+
+// expected s1
+initial
+begin
+	s1_expected = 1'bX;
+end 
+
+// expected s2
+initial
+begin
+	s2_expected = 1'bX;
+end 
+// generate trigger
+always @(s0_expected or s0 or s1_expected or s1 or s2_expected or s2)
+begin
+	trigger <= ~trigger;
+end
+
+always @(posedge sampler_rx or negedge sampler_rx)
+begin
+`ifdef debug_tbench
+	$display("Scanning pattern %d @time = %t",i,$realtime );
+	i = i + 1;
+	$display("| expected s0 = %b | expected s1 = %b | expected s2 = %b | ",s0_expected_prev,s1_expected_prev,s2_expected_prev);
+	$display("| real s0 = %b | real s1 = %b | real s2 = %b | ",s0_prev,s1_prev,s2_prev);
+`endif
+	if (
+		( s0_expected_prev !== 1'bx ) && ( s0_prev !== s0_expected_prev )
+		&& ((s0_expected_prev !== last_s0_exp) ||
+			on_first_change[1])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port s0 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", s0_expected_prev);
+		$display ("     Real value = %b", s0_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[1] = 1'b0;
+		last_s0_exp = s0_expected_prev;
+	end
+	if (
+		( s1_expected_prev !== 1'bx ) && ( s1_prev !== s1_expected_prev )
+		&& ((s1_expected_prev !== last_s1_exp) ||
+			on_first_change[2])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port s1 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", s1_expected_prev);
+		$display ("     Real value = %b", s1_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[2] = 1'b0;
+		last_s1_exp = s1_expected_prev;
+	end
+	if (
+		( s2_expected_prev !== 1'bx ) && ( s2_prev !== s2_expected_prev )
+		&& ((s2_expected_prev !== last_s2_exp) ||
+			on_first_change[3])
+	)
+	begin
+		$display ("ERROR! Vector Mismatch for output port s2 :: @time = %t",  $realtime);
+		$display ("     Expected value = %b", s2_expected_prev);
+		$display ("     Real value = %b", s2_prev);
+		nummismatches = nummismatches + 1;
+		on_first_change[3] = 1'b0;
+		last_s2_exp = s2_expected_prev;
+	end
+
+	trigger <= ~trigger;
+end
+initial 
+
+begin 
+$timeformat(-12,3," ps",6);
+#1000000;
+if (nummismatches > 0)
+	$display ("%d mismatched vectors : Simulation failed !",nummismatches);
+else
+	$display ("Simulation passed !");
+$finish;
+end 
+endmodule
+
+module moore_perp_vlg_vec_tst();
+// constants                                           
+// general purpose registers
+reg clk;
+reg rst;
+// wires                                               
+wire s0;
+wire s1;
+wire s2;
+
+wire sampler;                             
+
+// assign statements (if any)                          
+moore_perp i1 (
+// port map - connection between master ports and signals/registers   
+	.clk(clk),
+	.rst(rst),
+	.s0(s0),
+	.s1(s1),
+	.s2(s2)
+);
+
+// clk
+initial
+begin
+	clk = 1'b1;
+	clk = #10000 1'b0;
+	clk = #10000 1'b1;
+	clk = #15000 1'b0;
+	clk = #10000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #10000 1'b0;
+	clk = #5000 1'b1;
+	clk = #10000 1'b0;
+	clk = #15000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #15000 1'b0;
+	clk = #15000 1'b1;
+	clk = #10000 1'b0;
+	clk = #5000 1'b1;
+	clk = #15000 1'b0;
+	clk = #10000 1'b1;
+	clk = #5000 1'b0;
+	clk = #15000 1'b1;
+	clk = #15000 1'b0;
+	clk = #15000 1'b1;
+	clk = #15000 1'b0;
+	clk = #5000 1'b1;
+	clk = #15000 1'b0;
+	clk = #10000 1'b1;
+	clk = #15000 1'b0;
+	clk = #5000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #10000 1'b0;
+	clk = #15000 1'b1;
+	clk = #10000 1'b0;
+	clk = #45000 1'b1;
+	clk = #15000 1'b0;
+	clk = #5000 1'b1;
+	clk = #10000 1'b0;
+	clk = #15000 1'b1;
+	clk = #5000 1'b0;
+	clk = #20000 1'b1;
+	clk = #10000 1'b0;
+	clk = #5000 1'b1;
+	clk = #20000 1'b0;
+	clk = #15000 1'b1;
+	clk = #25000 1'b0;
+	clk = #20000 1'b1;
+	clk = #5000 1'b0;
+	clk = #10000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #15000 1'b0;
+	clk = #40000 1'b1;
+	clk = #5000 1'b0;
+	clk = #10000 1'b1;
+	clk = #15000 1'b0;
+	clk = #5000 1'b1;
+	clk = #5000 1'b0;
+	clk = #10000 1'b1;
+	clk = #5000 1'b0;
+	clk = #15000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #10000 1'b0;
+	clk = #15000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #25000 1'b0;
+	clk = #25000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #10000 1'b0;
+	clk = #20000 1'b1;
+	clk = #15000 1'b0;
+	clk = #5000 1'b1;
+	clk = #20000 1'b0;
+	clk = #20000 1'b1;
+	clk = #10000 1'b0;
+	clk = #5000 1'b1;
+	clk = #5000 1'b0;
+	clk = #20000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+	clk = #5000 1'b0;
+	clk = #20000 1'b1;
+	clk = #5000 1'b0;
+	clk = #5000 1'b1;
+end 
+
+// rst
+initial
+begin
+	rst = 1'b0;
+end 
+
+moore_perp_vlg_sample_tst tb_sample (
+	.clk(clk),
+	.rst(rst),
+	.sampler_tx(sampler)
+);
+
+moore_perp_vlg_check_tst tb_out(
+	.s0(s0),
+	.s1(s1),
+	.s2(s2),
+	.sampler_rx(sampler)
+);
+endmodule
+

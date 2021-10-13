@@ -1,0 +1,90 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/altera/15.0/PSD/display7/simulation/qsim
+vdisplay7
+!s110 1588251810
+!i10b 1
+!s100 ZEo7LPI;BGSfd=HMIm=VK0
+IoKloO=]@NDUm3VTbcLSjM3
+Z1 V`JN@9S9cnhjKRR_L]QIcM3
+R0
+w1588251808
+8display7.vo
+Fdisplay7.vo
+L0 32
+Z2 OV;L;10.3d;59
+r1
+!s85 0
+31
+!s108 1588251810.720000
+!s107 display7.vo|
+!s90 -work|work|display7.vo|
+!i113 1
+Z3 o-work work
+vdisplay7_vlg_check_tst
+Z4 !s110 1588251811
+!i10b 1
+!s100 nTPeoR@WdPi=IZTnCh]VT3
+I`lMB3a6Y?;8Xhkd]Lm=J42
+R1
+R0
+Z5 w1588251803
+Z6 8Waveform.vwf.vt
+Z7 FWaveform.vwf.vt
+L0 64
+R2
+r1
+!s85 0
+31
+Z8 !s108 1588251810.990000
+Z9 !s107 Waveform.vwf.vt|
+Z10 !s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R3
+vdisplay7_vlg_sample_tst
+R4
+!i10b 1
+!s100 7o0PB7XU<l:cS4V4R;kYU1
+I0fck`1YhBOJYgBX8HT[_Z0
+R1
+R0
+R5
+R6
+R7
+L0 30
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3
+vdisplay7_vlg_vec_tst
+R4
+!i10b 1
+!s100 BDY3kTa:;GSm[YPjD_<RZ1
+IJmizOX<:A[T3bd]<d7ig?1
+R1
+R0
+R5
+R6
+R7
+L0 321
+R2
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R3

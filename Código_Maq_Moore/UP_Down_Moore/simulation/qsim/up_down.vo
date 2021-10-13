@@ -1,0 +1,217 @@
+// Copyright (C) 1991-2015 Altera Corporation. All rights reserved.
+// Your use of Altera Corporation's design tools, logic functions 
+// and other software and tools, and its AMPP partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Altera Program License 
+// Subscription Agreement, the Altera Quartus II License Agreement,
+// the Altera MegaCore Function License Agreement, or other 
+// applicable license agreement, including, without limitation, 
+// that your use is for the sole purpose of programming logic 
+// devices manufactured by Altera and sold by Altera or its 
+// authorized distributors.  Please refer to the applicable 
+// agreement for further details.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus II 64-Bit"
+// VERSION "Version 15.0.0 Build 145 04/22/2015 Patches 0.01we SJ Web Edition"
+
+// DATE "06/10/2020 19:50:19"
+
+// 
+// Device: Altera 5CGXFC7C7F23C8 Package FBGA484
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module up_down (
+	clk,
+	rst,
+	botao,
+	s0,
+	s1);
+input 	clk;
+input 	rst;
+input 	botao;
+output 	s0;
+output 	s1;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \s0~output_o ;
+wire \s1~output_o ;
+wire \clk~input_o ;
+wire \botao~input_o ;
+wire \stateMoore_reg~0_combout ;
+wire \rst~input_o ;
+wire \stateMoore_reg~q ;
+wire \s0$latch~combout ;
+wire \s1$latch~combout ;
+
+
+cyclonev_io_obuf \s0~output (
+	.i(\s0$latch~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\s0~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \s0~output .bus_hold = "false";
+defparam \s0~output .open_drain_output = "false";
+defparam \s0~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_obuf \s1~output (
+	.i(\s1$latch~combout ),
+	.oe(vcc),
+	.dynamicterminationcontrol(gnd),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.parallelterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\s1~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \s1~output .bus_hold = "false";
+defparam \s1~output .open_drain_output = "false";
+defparam \s1~output .shift_series_termination_control = "false";
+// synopsys translate_on
+
+cyclonev_io_ibuf \clk~input (
+	.i(clk),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\clk~input_o ));
+// synopsys translate_off
+defparam \clk~input .bus_hold = "false";
+defparam \clk~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_io_ibuf \botao~input (
+	.i(botao),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\botao~input_o ));
+// synopsys translate_off
+defparam \botao~input .bus_hold = "false";
+defparam \botao~input .simulate_z_as = "z";
+// synopsys translate_on
+
+cyclonev_lcell_comb \stateMoore_reg~0 (
+// Equation(s):
+// \stateMoore_reg~0_combout  = !\stateMoore_reg~q  $ (!\botao~input_o )
+
+	.dataa(!\stateMoore_reg~q ),
+	.datab(!\botao~input_o ),
+	.datac(gnd),
+	.datad(gnd),
+	.datae(gnd),
+	.dataf(gnd),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\stateMoore_reg~0_combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam \stateMoore_reg~0 .extended_lut = "off";
+defparam \stateMoore_reg~0 .lut_mask = 64'h6666666666666666;
+defparam \stateMoore_reg~0 .shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_io_ibuf \rst~input (
+	.i(rst),
+	.ibar(gnd),
+	.dynamicterminationcontrol(gnd),
+	.o(\rst~input_o ));
+// synopsys translate_off
+defparam \rst~input .bus_hold = "false";
+defparam \rst~input .simulate_z_as = "z";
+// synopsys translate_on
+
+dffeas stateMoore_reg(
+	.clk(\clk~input_o ),
+	.d(\stateMoore_reg~0_combout ),
+	.asdata(vcc),
+	.clrn(!\rst~input_o ),
+	.aload(gnd),
+	.sclr(gnd),
+	.sload(gnd),
+	.ena(vcc),
+	.devclrn(devclrn),
+	.devpor(devpor),
+	.q(\stateMoore_reg~q ),
+	.prn(vcc));
+// synopsys translate_off
+defparam stateMoore_reg.is_wysiwyg = "true";
+defparam stateMoore_reg.power_up = "low";
+// synopsys translate_on
+
+cyclonev_lcell_comb s0$latch(
+// Equation(s):
+// \s0$latch~combout  = ( \s0$latch~combout  & ( \botao~input_o  & ( !\stateMoore_reg~q  ) ) ) # ( !\s0$latch~combout  & ( \botao~input_o  & ( !\stateMoore_reg~q  ) ) ) # ( \s0$latch~combout  & ( !\botao~input_o  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\stateMoore_reg~q ),
+	.datae(!\s0$latch~combout ),
+	.dataf(!\botao~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\s0$latch~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam s0$latch.extended_lut = "off";
+defparam s0$latch.lut_mask = 64'h0000FFFFFF00FF00;
+defparam s0$latch.shared_arith = "off";
+// synopsys translate_on
+
+cyclonev_lcell_comb s1$latch(
+// Equation(s):
+// \s1$latch~combout  = ( \s1$latch~combout  & ( \botao~input_o  & ( \stateMoore_reg~q  ) ) ) # ( !\s1$latch~combout  & ( \botao~input_o  & ( \stateMoore_reg~q  ) ) ) # ( \s1$latch~combout  & ( !\botao~input_o  ) )
+
+	.dataa(gnd),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(!\stateMoore_reg~q ),
+	.datae(!\s1$latch~combout ),
+	.dataf(!\botao~input_o ),
+	.datag(gnd),
+	.cin(gnd),
+	.sharein(gnd),
+	.combout(\s1$latch~combout ),
+	.sumout(),
+	.cout(),
+	.shareout());
+// synopsys translate_off
+defparam s1$latch.extended_lut = "off";
+defparam s1$latch.lut_mask = 64'h0000FFFF00FF00FF;
+defparam s1$latch.shared_arith = "off";
+// synopsys translate_on
+
+assign s0 = \s0~output_o ;
+
+assign s1 = \s1~output_o ;
+
+endmodule

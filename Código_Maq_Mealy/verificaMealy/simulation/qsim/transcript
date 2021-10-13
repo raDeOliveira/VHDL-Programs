@@ -1,0 +1,32 @@
+# do verificamoore3.do
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:52:51 on Jun 06,2020
+# vlog -work work verificamoore3.vo 
+# -- Compiling module verificamoore3
+# 
+# Top level modules:
+# 	verificamoore3
+# End time: 19:52:52 on Jun 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim ALTERA vlog 10.3d Compiler 2014.10 Oct  7 2014
+# Start time: 19:52:52 on Jun 06,2020
+# vlog -work work Waveform.vwf.vt 
+# -- Compiling module verificamoore3_vlg_sample_tst
+# -- Compiling module verificamoore3_vlg_check_tst
+# -- Compiling module verificamoore3_vlg_vec_tst
+# 
+# Top level modules:
+# 	verificamoore3_vlg_vec_tst
+# End time: 19:52:52 on Jun 06,2020, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -do "verificamoore3.do" 
+# Start time: 19:52:52 on Jun 06,2020
+# Loading work.verificamoore3_vlg_vec_tst
+# Loading work.verificamoore3
+# Loading work.verificamoore3_vlg_sample_tst
+# Loading work.verificamoore3_vlg_check_tst
+# Simulation passed !
+# ** Note: $finish    : Waveform.vwf.vt(178)
+#    Time: 1 us  Iteration: 0  Instance: /verificamoore3_vlg_vec_tst/tb_out
+# End time: 19:52:53 on Jun 06,2020, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

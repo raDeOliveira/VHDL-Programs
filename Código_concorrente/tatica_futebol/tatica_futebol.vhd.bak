@@ -1,0 +1,37 @@
+-- Tatica Futebol//
+library ieee;
+use ieee.std_logic_1164.all; 
+
+entity tatica_fut is
+port(	ataque0, ataque1: in std_logic_vector(1 downto 0);
+		meio_campo0, meio_campo1: in std_logic_vector(3 downto 0);
+		defesa0, defesa1: in std_logic_vector(3 downto 0));
+end tatica_fut;
+
+architecture arch of tatica_fut is
+
+begin
+	process
+		if (ataque0 = "01") then
+			ataque1 = "01";
+			elsif (ataque0 = "10") then
+				ataque1 = "10";
+		end if;
+		
+		if (meio_campo0 = "001" then
+			meio_campo1 <= "001";
+		elsif (meio_campo0 = "010" then
+			meio_campo1 <= "010";
+		elsif (meio_campo0 = "100" then;
+			meio_campo1 <= "100";
+		end if;
+		
+		if (ataque0 = "001") then
+			ataque1 <= "001";
+		elsif (ataque0 = "010") then
+			ataque1 <= "010";
+		elsif (ataque0 = "100") then
+			ataque1 <= "100";
+		end if;
+	end process;
+end arch;

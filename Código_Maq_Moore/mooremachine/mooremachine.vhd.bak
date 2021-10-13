@@ -1,0 +1,15 @@
+-- Moore // contador
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity contadorEstados is
+port( entrada, saida: in std_logic_vector(1 downto 0);
+		torniquete1, torniquete2: out std_logic_vector(1 downto 0);
+end contadorEstados;
+
+architecture arch of contadorEstados is
+
+begin
+	process(clk, reset)
+	when
+		entrada <= "00" 
